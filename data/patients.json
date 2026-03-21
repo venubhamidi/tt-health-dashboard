@@ -1,0 +1,6549 @@
+[
+  {
+    "patient_id": "TT-0001",
+    "first_name": "Hamid",
+    "last_name": "Joseph",
+    "gender": "Male",
+    "age": 53,
+    "date_of_birth": "1972-11-29",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Diego Martin",
+    "insurance": "NHIS",
+    "bmi": 18.0,
+    "blood_pressure": "159/87",
+    "systolic": 159,
+    "diastolic": 87,
+    "hba1c": 9.5,
+    "fasting_glucose": 270.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Moderately Controlled",
+        "diagnosed_date": "2024-09-17"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2001-09-10"
+      },
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Moderate Persistent",
+        "diagnosed_date": "2011-01-15"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Salbutamol Inhaler",
+        "for_condition": "Asthma / COPD",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-13",
+    "risk_score": 80
+  },
+  {
+    "patient_id": "TT-0002",
+    "first_name": "Keron",
+    "last_name": "Ramnath",
+    "gender": "Male",
+    "age": 28,
+    "date_of_birth": "1997-11-29",
+    "ethnicity": "Mixed",
+    "region": "Siparia",
+    "insurance": "Out-of-Pocket",
+    "bmi": 24.2,
+    "blood_pressure": "133/72",
+    "systolic": 133,
+    "diastolic": 72,
+    "hba1c": 4.8,
+    "fasting_glucose": 91.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-10-08",
+    "risk_score": 0
+  },
+  {
+    "patient_id": "TT-0003",
+    "first_name": "Marcus",
+    "last_name": "Edwards",
+    "gender": "Male",
+    "age": 22,
+    "date_of_birth": "2003-10-17",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "San Fernando",
+    "insurance": "NHIS",
+    "bmi": 23.5,
+    "blood_pressure": "128/78",
+    "systolic": 128,
+    "diastolic": 78,
+    "hba1c": 6.2,
+    "fasting_glucose": 92.0,
+    "smoker": true,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-23",
+    "risk_score": 8
+  },
+  {
+    "patient_id": "TT-0004",
+    "first_name": "Navin",
+    "last_name": "Persad",
+    "gender": "Male",
+    "age": 38,
+    "date_of_birth": "1987-04-17",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "San Fernando",
+    "insurance": "NHIS",
+    "bmi": 25.9,
+    "blood_pressure": "115/81",
+    "systolic": 115,
+    "diastolic": 81,
+    "hba1c": 6.2,
+    "fasting_glucose": 118.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2006-04-17"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-01-03",
+    "risk_score": 10
+  },
+  {
+    "patient_id": "TT-0005",
+    "first_name": "Tyrone",
+    "last_name": "Garcia",
+    "gender": "Male",
+    "age": 85,
+    "date_of_birth": "1941-04-11",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "Public (CDAP)",
+    "bmi": 23.5,
+    "blood_pressure": "139/95",
+    "systolic": 139,
+    "diastolic": 95,
+    "hba1c": 6.6,
+    "fasting_glucose": 222.0,
+    "smoker": true,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Uncontrolled",
+        "diagnosed_date": "2020-12-09"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1983-07-01"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Insulin Glargine",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-10-21",
+    "risk_score": 78
+  },
+  {
+    "patient_id": "TT-0006",
+    "first_name": "Hamid",
+    "last_name": "Edwards",
+    "gender": "Male",
+    "age": 27,
+    "date_of_birth": "1998-07-08",
+    "ethnicity": "Mixed",
+    "region": "Tunapuna",
+    "insurance": "Public (CDAP)",
+    "bmi": 28.7,
+    "blood_pressure": "135/68",
+    "systolic": 135,
+    "diastolic": 68,
+    "hba1c": 5.0,
+    "fasting_glucose": 80.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Moderate",
+        "diagnosed_date": "2024-12-03"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Fluoxetine 20mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-26",
+    "risk_score": 16
+  },
+  {
+    "patient_id": "TT-0007",
+    "first_name": "Vijay",
+    "last_name": "Narine",
+    "gender": "Male",
+    "age": 30,
+    "date_of_birth": "1996-03-03",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "Public (CDAP)",
+    "bmi": 27.7,
+    "blood_pressure": "129/67",
+    "systolic": 129,
+    "diastolic": 67,
+    "hba1c": 8.8,
+    "fasting_glucose": 228.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2015-05-05"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "2010-07-07"
+      },
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Moderate Persistent",
+        "diagnosed_date": "2025-01-05"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Mild",
+        "diagnosed_date": "2020-11-11"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Salbutamol Inhaler",
+        "for_condition": "Asthma / COPD",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Escitalopram 10mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-07",
+    "risk_score": 66
+  },
+  {
+    "patient_id": "TT-0008",
+    "first_name": "Kamla",
+    "last_name": "Gonzales",
+    "gender": "Female",
+    "age": 56,
+    "date_of_birth": "1969-08-13",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Penal",
+    "insurance": "Private Insurance",
+    "bmi": 34.9,
+    "blood_pressure": "153/104",
+    "systolic": 153,
+    "diastolic": 104,
+    "hba1c": 4.9,
+    "fasting_glucose": 89.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2002-01-08"
+      },
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Mild Intermittent",
+        "diagnosed_date": "2001-10-08"
+      },
+      {
+        "condition": "Cancer",
+        "severity": "Stage IV",
+        "diagnosed_date": "2020-02-11",
+        "subtype": "Colorectal"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Fluticasone Inhaler",
+        "for_condition": "Asthma / COPD",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Palliative Care",
+        "for_condition": "Cancer",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-09-26",
+    "risk_score": 81
+  },
+  {
+    "patient_id": "TT-0009",
+    "first_name": "Brian",
+    "last_name": "Mohammed",
+    "gender": "Male",
+    "age": 72,
+    "date_of_birth": "1953-11-18",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Scarborough (Tobago)",
+    "insurance": "Public (CDAP)",
+    "bmi": 25.2,
+    "blood_pressure": "117/70",
+    "systolic": 117,
+    "diastolic": 70,
+    "hba1c": 6.4,
+    "fasting_glucose": 115.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "HIV/AIDS",
+        "severity": "Well Controlled (Undetectable)",
+        "diagnosed_date": "1988-09-12"
+      },
+      {
+        "condition": "Cancer",
+        "severity": "Stage II",
+        "diagnosed_date": "2010-02-01",
+        "subtype": "Breast"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Dolutegravir 50mg",
+        "for_condition": "HIV/AIDS",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Lamivudine/Zidovudine",
+        "for_condition": "HIV/AIDS",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Surgical Management",
+        "for_condition": "Cancer",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Chemotherapy Regimen",
+        "for_condition": "Cancer",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-05",
+    "risk_score": 42
+  },
+  {
+    "patient_id": "TT-0010",
+    "first_name": "Keron",
+    "last_name": "Singh",
+    "gender": "Male",
+    "age": 31,
+    "date_of_birth": "1994-09-15",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "Public (CDAP)",
+    "bmi": 25.3,
+    "blood_pressure": "169/95",
+    "systolic": 169,
+    "diastolic": 95,
+    "hba1c": 6.3,
+    "fasting_glucose": 76.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2021-01-12"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-01-13",
+    "risk_score": 37
+  },
+  {
+    "patient_id": "TT-0011",
+    "first_name": "Tricia",
+    "last_name": "Maharaj",
+    "gender": "Female",
+    "age": 58,
+    "date_of_birth": "1967-08-25",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "San Fernando",
+    "insurance": "NHIS",
+    "bmi": 30.4,
+    "blood_pressure": "122/70",
+    "systolic": 122,
+    "diastolic": 70,
+    "hba1c": 5.7,
+    "fasting_glucose": 87.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Severe",
+        "diagnosed_date": "1996-01-21"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "2020-07-19"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Montelukast 10mg",
+        "for_condition": "Asthma / COPD",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Calcium Carbonate 500mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-10-31",
+    "risk_score": 57
+  },
+  {
+    "patient_id": "TT-0012",
+    "first_name": "Giselle",
+    "last_name": "Maharaj",
+    "gender": "Female",
+    "age": 74,
+    "date_of_birth": "1951-04-29",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "Public (CDAP)",
+    "bmi": 35.1,
+    "blood_pressure": "134/67",
+    "systolic": 134,
+    "diastolic": 67,
+    "hba1c": 5.4,
+    "fasting_glucose": 119.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Cancer",
+        "severity": "Stage IV",
+        "diagnosed_date": "1989-12-16",
+        "subtype": "Breast"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Tamoxifen 20mg",
+        "for_condition": "Cancer",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-24",
+    "risk_score": 59
+  },
+  {
+    "patient_id": "TT-0013",
+    "first_name": "Hamid",
+    "last_name": "Ali",
+    "gender": "Male",
+    "age": 31,
+    "date_of_birth": "1994-08-24",
+    "ethnicity": "Mixed",
+    "region": "Penal",
+    "insurance": "Public (CDAP)",
+    "bmi": 27.3,
+    "blood_pressure": "130/73",
+    "systolic": 130,
+    "diastolic": 73,
+    "hba1c": 6.0,
+    "fasting_glucose": 99.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Stable",
+        "diagnosed_date": "2011-03-02"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Atorvastatin 20mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Rosuvastatin 10mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-10-11",
+    "risk_score": 20
+  },
+  {
+    "patient_id": "TT-0014",
+    "first_name": "Esther",
+    "last_name": "Doodnath",
+    "gender": "Female",
+    "age": 28,
+    "date_of_birth": "1998-01-17",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Siparia",
+    "insurance": "Private Insurance",
+    "bmi": 31.6,
+    "blood_pressure": "132/65",
+    "systolic": 132,
+    "diastolic": 65,
+    "hba1c": 6.1,
+    "fasting_glucose": 112.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-12-13",
+    "risk_score": 10
+  },
+  {
+    "patient_id": "TT-0015",
+    "first_name": "Hema",
+    "last_name": "Edwards",
+    "gender": "Female",
+    "age": 46,
+    "date_of_birth": "1979-07-27",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Siparia",
+    "insurance": "Public (CDAP)",
+    "bmi": 25.1,
+    "blood_pressure": "161/93",
+    "systolic": 161,
+    "diastolic": 93,
+    "hba1c": 6.1,
+    "fasting_glucose": 96.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2020-05-30"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-02",
+    "risk_score": 39
+  },
+  {
+    "patient_id": "TT-0016",
+    "first_name": "Darren",
+    "last_name": "Mohammed",
+    "gender": "Male",
+    "age": 49,
+    "date_of_birth": "1976-12-21",
+    "ethnicity": "Mixed",
+    "region": "Sangre Grande",
+    "insurance": "NHIS",
+    "bmi": 40.8,
+    "blood_pressure": "146/108",
+    "systolic": 146,
+    "diastolic": 108,
+    "hba1c": 9.4,
+    "fasting_glucose": 239.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2014-08-23"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2000-04-23"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2012-08-10"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "2025-07-27"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Atenolol 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Furosemide 40mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Erythropoietin",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-14",
+    "risk_score": 90
+  },
+  {
+    "patient_id": "TT-0017",
+    "first_name": "Indira",
+    "last_name": "De Silva",
+    "gender": "Female",
+    "age": 49,
+    "date_of_birth": "1977-02-17",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "Public (CDAP)",
+    "bmi": 29.0,
+    "blood_pressure": "154/106",
+    "systolic": 154,
+    "diastolic": 106,
+    "hba1c": 9.7,
+    "fasting_glucose": 208.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Moderately Controlled",
+        "diagnosed_date": "2024-11-06"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2013-09-29"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Atenolol 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-05",
+    "risk_score": 56
+  },
+  {
+    "patient_id": "TT-0018",
+    "first_name": "Devika",
+    "last_name": "Udecott",
+    "gender": "Female",
+    "age": 50,
+    "date_of_birth": "1975-12-06",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Arima",
+    "insurance": "Public (CDAP)",
+    "bmi": 35.8,
+    "blood_pressure": "113/71",
+    "systolic": 113,
+    "diastolic": 71,
+    "hba1c": 5.1,
+    "fasting_glucose": 90.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "5+/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-02",
+    "risk_score": 20
+  },
+  {
+    "patient_id": "TT-0019",
+    "first_name": "Donna",
+    "last_name": "Valentine",
+    "gender": "Female",
+    "age": 34,
+    "date_of_birth": "1991-05-08",
+    "ethnicity": "Mixed",
+    "region": "Princes Town",
+    "insurance": "Private Insurance",
+    "bmi": 32.2,
+    "blood_pressure": "174/86",
+    "systolic": 174,
+    "diastolic": 86,
+    "hba1c": 9.9,
+    "fasting_glucose": 255.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2018-06-30"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2015-02-09"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class III (BMI 40+)",
+        "diagnosed_date": "2013-08-15"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-01-26",
+    "risk_score": 76
+  },
+  {
+    "patient_id": "TT-0020",
+    "first_name": "Xavier",
+    "last_name": "Persad",
+    "gender": "Male",
+    "age": 70,
+    "date_of_birth": "1955-08-21",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "NHIS",
+    "bmi": 27.2,
+    "blood_pressure": "155/104",
+    "systolic": 155,
+    "diastolic": 104,
+    "hba1c": 7.9,
+    "fasting_glucose": 142.0,
+    "smoker": false,
+    "alcohol_use": "Heavy",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "1995-04-21"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2018-09-11"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Glimepiride 2mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-09-29",
+    "risk_score": 71
+  },
+  {
+    "patient_id": "TT-0021",
+    "first_name": "Queenie",
+    "last_name": "Ramkissoon",
+    "gender": "Female",
+    "age": 40,
+    "date_of_birth": "1985-08-03",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "NHIS",
+    "bmi": 21.7,
+    "blood_pressure": "155/93",
+    "systolic": 155,
+    "diastolic": 93,
+    "hba1c": 5.1,
+    "fasting_glucose": 123.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2024-02-03"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-12-07",
+    "risk_score": 26
+  },
+  {
+    "patient_id": "TT-0022",
+    "first_name": "Latoya",
+    "last_name": "Persad",
+    "gender": "Female",
+    "age": 42,
+    "date_of_birth": "1983-07-10",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Penal",
+    "insurance": "NHIS",
+    "bmi": 25.6,
+    "blood_pressure": "119/81",
+    "systolic": 119,
+    "diastolic": 81,
+    "hba1c": 5.8,
+    "fasting_glucose": 93.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Stable",
+        "diagnosed_date": "2004-05-24"
+      },
+      {
+        "condition": "Cancer",
+        "severity": "Stage II",
+        "diagnosed_date": "2021-01-18",
+        "subtype": "Cervical"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Aspirin 81mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Surgical Management",
+        "for_condition": "Cancer",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-11-17",
+    "risk_score": 27
+  },
+  {
+    "patient_id": "TT-0023",
+    "first_name": "Kevon",
+    "last_name": "Gonzales",
+    "gender": "Male",
+    "age": 53,
+    "date_of_birth": "1972-09-03",
+    "ethnicity": "Mixed",
+    "region": "Penal",
+    "insurance": "Private Insurance",
+    "bmi": 21.0,
+    "blood_pressure": "124/75",
+    "systolic": 124,
+    "diastolic": 75,
+    "hba1c": 6.2,
+    "fasting_glucose": 124.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-18",
+    "risk_score": 12
+  },
+  {
+    "patient_id": "TT-0024",
+    "first_name": "Vanessa",
+    "last_name": "Warner",
+    "gender": "Female",
+    "age": 66,
+    "date_of_birth": "1959-09-22",
+    "ethnicity": "Mixed",
+    "region": "Rio Claro",
+    "insurance": "NHIS",
+    "bmi": 25.3,
+    "blood_pressure": "151/95",
+    "systolic": 151,
+    "diastolic": 95,
+    "hba1c": 5.7,
+    "fasting_glucose": 92.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2011-03-31"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Nifedipine 30mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2026-02-28",
+    "risk_score": 50
+  },
+  {
+    "patient_id": "TT-0025",
+    "first_name": "Brinda",
+    "last_name": "Persad",
+    "gender": "Female",
+    "age": 80,
+    "date_of_birth": "1945-07-07",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "San Fernando",
+    "insurance": "Public (CDAP)",
+    "bmi": 37.3,
+    "blood_pressure": "174/106",
+    "systolic": 174,
+    "diastolic": 106,
+    "hba1c": 7.8,
+    "fasting_glucose": 285.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Moderately Controlled",
+        "diagnosed_date": "2022-01-31"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2012-09-14"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-02-12",
+    "risk_score": 92
+  },
+  {
+    "patient_id": "TT-0026",
+    "first_name": "Odette",
+    "last_name": "Hosein",
+    "gender": "Female",
+    "age": 38,
+    "date_of_birth": "1988-02-22",
+    "ethnicity": "Mixed",
+    "region": "Sangre Grande",
+    "insurance": "Public (CDAP)",
+    "bmi": 32.8,
+    "blood_pressure": "119/74",
+    "systolic": 119,
+    "diastolic": 74,
+    "hba1c": 4.5,
+    "fasting_glucose": 116.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-12-09",
+    "risk_score": 10
+  },
+  {
+    "patient_id": "TT-0027",
+    "first_name": "Zahir",
+    "last_name": "Warner",
+    "gender": "Male",
+    "age": 81,
+    "date_of_birth": "1944-11-15",
+    "ethnicity": "Mixed",
+    "region": "Arima",
+    "insurance": "Private Insurance",
+    "bmi": 29.6,
+    "blood_pressure": "165/110",
+    "systolic": 165,
+    "diastolic": 110,
+    "hba1c": 5.1,
+    "fasting_glucose": 118.0,
+    "smoker": true,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "1993-10-19"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Mild",
+        "diagnosed_date": "2001-12-10"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Sertraline 50mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-02-19",
+    "risk_score": 70
+  },
+  {
+    "patient_id": "TT-0028",
+    "first_name": "Zara",
+    "last_name": "Isaac",
+    "gender": "Female",
+    "age": 64,
+    "date_of_birth": "1962-02-19",
+    "ethnicity": "Other",
+    "region": "Port of Spain",
+    "insurance": "NHIS",
+    "bmi": 23.8,
+    "blood_pressure": "179/102",
+    "systolic": 179,
+    "diastolic": 102,
+    "hba1c": 5.3,
+    "fasting_glucose": 111.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1997-06-30"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class III (BMI 40+)",
+        "diagnosed_date": "2016-03-17"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Mild",
+        "diagnosed_date": "2002-01-09"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Liraglutide 3mg",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Sertraline 50mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-02-09",
+    "risk_score": 52
+  },
+  {
+    "patient_id": "TT-0029",
+    "first_name": "Odette",
+    "last_name": "Khan",
+    "gender": "Female",
+    "age": 65,
+    "date_of_birth": "1960-12-16",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Arima",
+    "insurance": "Public (CDAP)",
+    "bmi": 18.9,
+    "blood_pressure": "149/95",
+    "systolic": 149,
+    "diastolic": 95,
+    "hba1c": 6.0,
+    "fasting_glucose": 113.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2010-01-18"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class III (BMI 40+)",
+        "diagnosed_date": "1997-05-09"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Nifedipine 30mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-19",
+    "risk_score": 54
+  },
+  {
+    "patient_id": "TT-0030",
+    "first_name": "Donna",
+    "last_name": "Mohammed",
+    "gender": "Female",
+    "age": 32,
+    "date_of_birth": "1993-04-25",
+    "ethnicity": "Mixed",
+    "region": "Chaguanas",
+    "insurance": "Public (CDAP)",
+    "bmi": 22.3,
+    "blood_pressure": "111/81",
+    "systolic": 111,
+    "diastolic": 81,
+    "hba1c": 8.2,
+    "fasting_glucose": 238.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Uncontrolled",
+        "diagnosed_date": "2022-03-25"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-03-13",
+    "risk_score": 32
+  },
+  {
+    "patient_id": "TT-0031",
+    "first_name": "Kavita",
+    "last_name": "Williams",
+    "gender": "Female",
+    "age": 74,
+    "date_of_birth": "1952-03-02",
+    "ethnicity": "Mixed",
+    "region": "Scarborough (Tobago)",
+    "insurance": "NHIS",
+    "bmi": 26.9,
+    "blood_pressure": "155/106",
+    "systolic": 155,
+    "diastolic": 106,
+    "hba1c": 5.0,
+    "fasting_glucose": 122.0,
+    "smoker": true,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2011-07-21"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "1993-10-20"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Sodium Bicarbonate",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-09-26",
+    "risk_score": 71
+  },
+  {
+    "patient_id": "TT-0032",
+    "first_name": "Ravi",
+    "last_name": "Singh",
+    "gender": "Male",
+    "age": 65,
+    "date_of_birth": "1961-01-30",
+    "ethnicity": "Mixed",
+    "region": "Sangre Grande",
+    "insurance": "Private Insurance",
+    "bmi": 22.8,
+    "blood_pressure": "141/96",
+    "systolic": 141,
+    "diastolic": 96,
+    "hba1c": 6.1,
+    "fasting_glucose": 90.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "1992-06-25"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Atenolol 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2026-01-08",
+    "risk_score": 44
+  },
+  {
+    "patient_id": "TT-0033",
+    "first_name": "Farouk",
+    "last_name": "Edwards",
+    "gender": "Male",
+    "age": 52,
+    "date_of_birth": "1974-03-20",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Diego Martin",
+    "insurance": "Out-of-Pocket",
+    "bmi": 29.9,
+    "blood_pressure": "134/84",
+    "systolic": 134,
+    "diastolic": 84,
+    "hba1c": 4.6,
+    "fasting_glucose": 74.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "2024-10-05"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-27",
+    "risk_score": 21
+  },
+  {
+    "patient_id": "TT-0034",
+    "first_name": "Wayne",
+    "last_name": "Sookdeo",
+    "gender": "Male",
+    "age": 32,
+    "date_of_birth": "1993-11-04",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Sangre Grande",
+    "insurance": "Public (CDAP)",
+    "bmi": 25.4,
+    "blood_pressure": "117/81",
+    "systolic": 117,
+    "diastolic": 81,
+    "hba1c": 5.6,
+    "fasting_glucose": 107.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Stable",
+        "diagnosed_date": "2019-05-18"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Aspirin 81mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-20",
+    "risk_score": 15
+  },
+  {
+    "patient_id": "TT-0035",
+    "first_name": "Marcus",
+    "last_name": "Thomas",
+    "gender": "Male",
+    "age": 72,
+    "date_of_birth": "1953-06-19",
+    "ethnicity": "Mixed",
+    "region": "Tunapuna",
+    "insurance": "Public (CDAP)",
+    "bmi": 18.0,
+    "blood_pressure": "157/96",
+    "systolic": 157,
+    "diastolic": 96,
+    "hba1c": 5.9,
+    "fasting_glucose": 115.0,
+    "smoker": true,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1998-05-30"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class III (BMI 40+)",
+        "diagnosed_date": "2002-08-20"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-02-11",
+    "risk_score": 59
+  },
+  {
+    "patient_id": "TT-0036",
+    "first_name": "Zahir",
+    "last_name": "Ottley",
+    "gender": "Male",
+    "age": 81,
+    "date_of_birth": "1944-08-16",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Penal",
+    "insurance": "Private Insurance",
+    "bmi": 26.8,
+    "blood_pressure": "130/74",
+    "systolic": 130,
+    "diastolic": 74,
+    "hba1c": 6.0,
+    "fasting_glucose": 103.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-12-20",
+    "risk_score": 26
+  },
+  {
+    "patient_id": "TT-0037",
+    "first_name": "Tricia",
+    "last_name": "Maharaj",
+    "gender": "Female",
+    "age": 29,
+    "date_of_birth": "1996-05-18",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Siparia",
+    "insurance": "Out-of-Pocket",
+    "bmi": 29.9,
+    "blood_pressure": "120/67",
+    "systolic": 120,
+    "diastolic": 67,
+    "hba1c": 5.5,
+    "fasting_glucose": 79.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-16",
+    "risk_score": 0
+  },
+  {
+    "patient_id": "TT-0038",
+    "first_name": "Nalini",
+    "last_name": "Valentine",
+    "gender": "Female",
+    "age": 54,
+    "date_of_birth": "1971-09-18",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Scarborough (Tobago)",
+    "insurance": "Public (CDAP)",
+    "bmi": 28.5,
+    "blood_pressure": "176/107",
+    "systolic": 176,
+    "diastolic": 107,
+    "hba1c": 5.8,
+    "fasting_glucose": 77.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2001-02-09"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-02-27",
+    "risk_score": 33
+  },
+  {
+    "patient_id": "TT-0039",
+    "first_name": "Lester",
+    "last_name": "Mohammed",
+    "gender": "Male",
+    "age": 72,
+    "date_of_birth": "1953-07-22",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Scarborough (Tobago)",
+    "insurance": "Public (CDAP)",
+    "bmi": 18.8,
+    "blood_pressure": "126/66",
+    "systolic": 126,
+    "diastolic": 66,
+    "hba1c": 5.8,
+    "fasting_glucose": 118.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-10-13",
+    "risk_score": 16
+  },
+  {
+    "patient_id": "TT-0040",
+    "first_name": "Lester",
+    "last_name": "Sookdeo",
+    "gender": "Male",
+    "age": 23,
+    "date_of_birth": "2002-08-29",
+    "ethnicity": "Mixed",
+    "region": "Diego Martin",
+    "insurance": "Out-of-Pocket",
+    "bmi": 25.3,
+    "blood_pressure": "121/83",
+    "systolic": 121,
+    "diastolic": 83,
+    "hba1c": 6.4,
+    "fasting_glucose": 95.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-07",
+    "risk_score": 5
+  },
+  {
+    "patient_id": "TT-0041",
+    "first_name": "Brian",
+    "last_name": "Ramkissoon",
+    "gender": "Male",
+    "age": 35,
+    "date_of_birth": "1990-11-22",
+    "ethnicity": "Mixed",
+    "region": "Princes Town",
+    "insurance": "Public (CDAP)",
+    "bmi": 18.0,
+    "blood_pressure": "117/79",
+    "systolic": 117,
+    "diastolic": 79,
+    "hba1c": 6.2,
+    "fasting_glucose": 121.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "5+/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-12-04",
+    "risk_score": 0
+  },
+  {
+    "patient_id": "TT-0042",
+    "first_name": "Asha",
+    "last_name": "Thomas",
+    "gender": "Female",
+    "age": 58,
+    "date_of_birth": "1968-02-14",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Tunapuna",
+    "insurance": "Private Insurance",
+    "bmi": 32.6,
+    "blood_pressure": "167/102",
+    "systolic": 167,
+    "diastolic": 102,
+    "hba1c": 4.5,
+    "fasting_glucose": 118.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1994-06-28"
+      },
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Stable",
+        "diagnosed_date": "1998-10-29"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "2003-09-19"
+      },
+      {
+        "condition": "Cancer",
+        "severity": "Stage II",
+        "diagnosed_date": "1996-02-29",
+        "subtype": "Prostate"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Metoprolol 50mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Furosemide 40mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Erythropoietin",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Chemotherapy Regimen",
+        "for_condition": "Cancer",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-03-09",
+    "risk_score": 91
+  },
+  {
+    "patient_id": "TT-0043",
+    "first_name": "Yusuf",
+    "last_name": "Valentine",
+    "gender": "Male",
+    "age": 31,
+    "date_of_birth": "1994-06-05",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Scarborough (Tobago)",
+    "insurance": "Private Insurance",
+    "bmi": 22.4,
+    "blood_pressure": "124/77",
+    "systolic": 124,
+    "diastolic": 77,
+    "hba1c": 8.4,
+    "fasting_glucose": 159.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2010-10-13"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2021-08-30"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Moderate",
+        "diagnosed_date": "2025-01-24"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Counseling/Therapy Only",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-09-24",
+    "risk_score": 51
+  },
+  {
+    "patient_id": "TT-0044",
+    "first_name": "Janelle",
+    "last_name": "Garcia",
+    "gender": "Female",
+    "age": 41,
+    "date_of_birth": "1984-06-25",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "San Fernando",
+    "insurance": "Public (CDAP)",
+    "bmi": 29.6,
+    "blood_pressure": "135/79",
+    "systolic": 135,
+    "diastolic": 79,
+    "hba1c": 6.7,
+    "fasting_glucose": 138.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Moderately Controlled",
+        "diagnosed_date": "2016-07-31"
+      },
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Severe",
+        "diagnosed_date": "2019-12-24"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Metoprolol 50mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-06",
+    "risk_score": 38
+  },
+  {
+    "patient_id": "TT-0045",
+    "first_name": "Yashoda",
+    "last_name": "Williams",
+    "gender": "Female",
+    "age": 65,
+    "date_of_birth": "1960-08-22",
+    "ethnicity": "Other",
+    "region": "Sangre Grande",
+    "insurance": "Public (CDAP)",
+    "bmi": 26.5,
+    "blood_pressure": "180/107",
+    "systolic": 180,
+    "diastolic": 107,
+    "hba1c": 10.0,
+    "fasting_glucose": 264.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2021-01-18"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2014-06-18"
+      },
+      {
+        "condition": "Cancer",
+        "severity": "Stage I",
+        "diagnosed_date": "2011-10-20",
+        "subtype": "Lymphoma"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Surgical Management",
+        "for_condition": "Cancer",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-11-10",
+    "risk_score": 68
+  },
+  {
+    "patient_id": "TT-0046",
+    "first_name": "Zara",
+    "last_name": "Narine",
+    "gender": "Female",
+    "age": 65,
+    "date_of_birth": "1960-08-10",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Chaguanas",
+    "insurance": "NHIS",
+    "bmi": 30.6,
+    "blood_pressure": "145/95",
+    "systolic": 145,
+    "diastolic": 95,
+    "hba1c": 6.3,
+    "fasting_glucose": 82.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1991-08-21"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "1991-02-20"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-11-08",
+    "risk_score": 58
+  },
+  {
+    "patient_id": "TT-0047",
+    "first_name": "Reshma",
+    "last_name": "Williams",
+    "gender": "Female",
+    "age": 56,
+    "date_of_birth": "1969-05-25",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Couva",
+    "insurance": "Public (CDAP)",
+    "bmi": 33.6,
+    "blood_pressure": "135/77",
+    "systolic": 135,
+    "diastolic": 77,
+    "hba1c": 5.1,
+    "fasting_glucose": 74.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2024-04-16"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Liraglutide 3mg",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-03-05",
+    "risk_score": 33
+  },
+  {
+    "patient_id": "TT-0048",
+    "first_name": "Marcus",
+    "last_name": "Joseph",
+    "gender": "Male",
+    "age": 58,
+    "date_of_birth": "1967-10-11",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Penal",
+    "insurance": "Public (CDAP)",
+    "bmi": 25.8,
+    "blood_pressure": "117/70",
+    "systolic": 117,
+    "diastolic": 70,
+    "hba1c": 6.0,
+    "fasting_glucose": 121.0,
+    "smoker": false,
+    "alcohol_use": "Heavy",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-12-30",
+    "risk_score": 14
+  },
+  {
+    "patient_id": "TT-0049",
+    "first_name": "Queenie",
+    "last_name": "Khan",
+    "gender": "Female",
+    "age": 29,
+    "date_of_birth": "1996-09-08",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Arima",
+    "insurance": "Private Insurance",
+    "bmi": 34.1,
+    "blood_pressure": "134/77",
+    "systolic": 134,
+    "diastolic": 77,
+    "hba1c": 5.2,
+    "fasting_glucose": 92.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-10-26",
+    "risk_score": 10
+  },
+  {
+    "patient_id": "TT-0050",
+    "first_name": "Vanessa",
+    "last_name": "Persad",
+    "gender": "Female",
+    "age": 53,
+    "date_of_birth": "1972-05-19",
+    "ethnicity": "Mixed",
+    "region": "San Fernando",
+    "insurance": "Out-of-Pocket",
+    "bmi": 21.5,
+    "blood_pressure": "171/94",
+    "systolic": 171,
+    "diastolic": 94,
+    "hba1c": 9.1,
+    "fasting_glucose": 129.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2001-02-11"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2019-12-28"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class III (BMI 40+)",
+        "diagnosed_date": "2011-11-07"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Empagliflozin 25mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Liraglutide 3mg",
+        "for_condition": "Obesity",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-12-26",
+    "risk_score": 68
+  },
+  {
+    "patient_id": "TT-0051",
+    "first_name": "Andre",
+    "last_name": "Valentine",
+    "gender": "Male",
+    "age": 51,
+    "date_of_birth": "1974-05-03",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Sangre Grande",
+    "insurance": "Public (CDAP)",
+    "bmi": 19.5,
+    "blood_pressure": "125/66",
+    "systolic": 125,
+    "diastolic": 66,
+    "hba1c": 5.8,
+    "fasting_glucose": 99.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2019-07-05"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Phentermine 37.5mg",
+        "for_condition": "Obesity",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-28",
+    "risk_score": 20
+  },
+  {
+    "patient_id": "TT-0052",
+    "first_name": "Lester",
+    "last_name": "Sookdeo",
+    "gender": "Male",
+    "age": 61,
+    "date_of_birth": "1964-06-30",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Penal",
+    "insurance": "NHIS",
+    "bmi": 32.6,
+    "blood_pressure": "152/94",
+    "systolic": 152,
+    "diastolic": 94,
+    "hba1c": 4.7,
+    "fasting_glucose": 107.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2015-01-30"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-13",
+    "risk_score": 46
+  },
+  {
+    "patient_id": "TT-0053",
+    "first_name": "Lester",
+    "last_name": "Gonzales",
+    "gender": "Male",
+    "age": 54,
+    "date_of_birth": "1972-02-23",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "Out-of-Pocket",
+    "bmi": 38.8,
+    "blood_pressure": "117/85",
+    "systolic": 117,
+    "diastolic": 85,
+    "hba1c": 4.9,
+    "fasting_glucose": 76.0,
+    "smoker": true,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-12-26",
+    "risk_score": 35
+  },
+  {
+    "patient_id": "TT-0054",
+    "first_name": "Vijay",
+    "last_name": "Charles",
+    "gender": "Male",
+    "age": 78,
+    "date_of_birth": "1947-08-09",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Penal",
+    "insurance": "Private Insurance",
+    "bmi": 31.2,
+    "blood_pressure": "168/100",
+    "systolic": 168,
+    "diastolic": 100,
+    "hba1c": 6.2,
+    "fasting_glucose": 77.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2002-02-18"
+      },
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Moderate Persistent",
+        "diagnosed_date": "1987-01-04"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Montelukast 10mg",
+        "for_condition": "Asthma / COPD",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Salbutamol Inhaler",
+        "for_condition": "Asthma / COPD",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-11",
+    "risk_score": 86
+  },
+  {
+    "patient_id": "TT-0055",
+    "first_name": "Xena",
+    "last_name": "Garcia",
+    "gender": "Female",
+    "age": 41,
+    "date_of_birth": "1985-03-24",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Penal",
+    "insurance": "NHIS",
+    "bmi": 33.7,
+    "blood_pressure": "117/65",
+    "systolic": 117,
+    "diastolic": 65,
+    "hba1c": 5.0,
+    "fasting_glucose": 83.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-11",
+    "risk_score": 16
+  },
+  {
+    "patient_id": "TT-0056",
+    "first_name": "Devika",
+    "last_name": "Khan",
+    "gender": "Female",
+    "age": 25,
+    "date_of_birth": "2000-04-20",
+    "ethnicity": "Mixed",
+    "region": "Point Fortin",
+    "insurance": "Public (CDAP)",
+    "bmi": 26.8,
+    "blood_pressure": "114/80",
+    "systolic": 114,
+    "diastolic": 80,
+    "hba1c": 4.8,
+    "fasting_glucose": 111.0,
+    "smoker": false,
+    "alcohol_use": "Heavy",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-10-16",
+    "risk_score": 5
+  },
+  {
+    "patient_id": "TT-0057",
+    "first_name": "Omar",
+    "last_name": "Maharaj",
+    "gender": "Male",
+    "age": 28,
+    "date_of_birth": "1997-07-02",
+    "ethnicity": "Mixed",
+    "region": "Diego Martin",
+    "insurance": "Private Insurance",
+    "bmi": 23.8,
+    "blood_pressure": "125/67",
+    "systolic": 125,
+    "diastolic": 67,
+    "hba1c": 6.2,
+    "fasting_glucose": 95.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-03-06",
+    "risk_score": 5
+  },
+  {
+    "patient_id": "TT-0058",
+    "first_name": "Meera",
+    "last_name": "Edwards",
+    "gender": "Female",
+    "age": 57,
+    "date_of_birth": "1969-03-24",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "Public (CDAP)",
+    "bmi": 19.6,
+    "blood_pressure": "157/88",
+    "systolic": 157,
+    "diastolic": 88,
+    "hba1c": 7.5,
+    "fasting_glucose": 219.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2023-04-12"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2020-01-24"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-05",
+    "risk_score": 66
+  },
+  {
+    "patient_id": "TT-0059",
+    "first_name": "Meera",
+    "last_name": "Young",
+    "gender": "Female",
+    "age": 72,
+    "date_of_birth": "1953-07-10",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Arima",
+    "insurance": "Public (CDAP)",
+    "bmi": 29.2,
+    "blood_pressure": "144/106",
+    "systolic": 144,
+    "diastolic": 106,
+    "hba1c": 9.4,
+    "fasting_glucose": 198.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "1993-08-13"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2023-02-13"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2016-05-23"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Sitagliptin 100mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Atenolol 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-01-09",
+    "risk_score": 72
+  },
+  {
+    "patient_id": "TT-0060",
+    "first_name": "Uma",
+    "last_name": "Sookdeo",
+    "gender": "Female",
+    "age": 24,
+    "date_of_birth": "2001-10-02",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Siparia",
+    "insurance": "Public (CDAP)",
+    "bmi": 23.8,
+    "blood_pressure": "124/76",
+    "systolic": 124,
+    "diastolic": 76,
+    "hba1c": 4.7,
+    "fasting_glucose": 110.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "2019-05-24"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Phentermine 37.5mg",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-01-31",
+    "risk_score": 20
+  },
+  {
+    "patient_id": "TT-0061",
+    "first_name": "Gregory",
+    "last_name": "Boodoo",
+    "gender": "Male",
+    "age": 45,
+    "date_of_birth": "1980-07-30",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Fyzabad",
+    "insurance": "Public (CDAP)",
+    "bmi": 32.0,
+    "blood_pressure": "123/66",
+    "systolic": 123,
+    "diastolic": 66,
+    "hba1c": 5.6,
+    "fasting_glucose": 82.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Severe",
+        "diagnosed_date": "2004-08-27"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "2010-01-08"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metoprolol 50mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Aspirin 81mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-02-11",
+    "risk_score": 44
+  },
+  {
+    "patient_id": "TT-0062",
+    "first_name": "Meera",
+    "last_name": "Ottley",
+    "gender": "Female",
+    "age": 60,
+    "date_of_birth": "1965-12-09",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "NHIS",
+    "bmi": 24.8,
+    "blood_pressure": "124/76",
+    "systolic": 124,
+    "diastolic": 76,
+    "hba1c": 6.8,
+    "fasting_glucose": 237.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Moderately Controlled",
+        "diagnosed_date": "2004-03-21"
+      },
+      {
+        "condition": "Cancer",
+        "severity": "Stage IV",
+        "diagnosed_date": "2007-08-22",
+        "subtype": "Breast"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Glimepiride 2mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Palliative Care",
+        "for_condition": "Cancer",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-14",
+    "risk_score": 48
+  },
+  {
+    "patient_id": "TT-0063",
+    "first_name": "Reshma",
+    "last_name": "Fraser",
+    "gender": "Female",
+    "age": 85,
+    "date_of_birth": "1940-11-22",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Port of Spain",
+    "insurance": "NHIS",
+    "bmi": 21.5,
+    "blood_pressure": "112/76",
+    "systolic": 112,
+    "diastolic": 76,
+    "hba1c": 6.3,
+    "fasting_glucose": 95.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-17",
+    "risk_score": 22
+  },
+  {
+    "patient_id": "TT-0064",
+    "first_name": "Ravi",
+    "last_name": "Lewis",
+    "gender": "Male",
+    "age": 66,
+    "date_of_birth": "1959-09-26",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Port of Spain",
+    "insurance": "Public (CDAP)",
+    "bmi": 35.3,
+    "blood_pressure": "127/83",
+    "systolic": 127,
+    "diastolic": 83,
+    "hba1c": 5.8,
+    "fasting_glucose": 80.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Severe",
+        "diagnosed_date": "2021-11-10"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Atorvastatin 20mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-12-30",
+    "risk_score": 50
+  },
+  {
+    "patient_id": "TT-0065",
+    "first_name": "Simone",
+    "last_name": "Doodnath",
+    "gender": "Female",
+    "age": 56,
+    "date_of_birth": "1970-01-11",
+    "ethnicity": "Other",
+    "region": "Sangre Grande",
+    "insurance": "Out-of-Pocket",
+    "bmi": 25.0,
+    "blood_pressure": "172/106",
+    "systolic": 172,
+    "diastolic": 106,
+    "hba1c": 5.2,
+    "fasting_glucose": 112.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2019-11-11"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "1999-06-03"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2026-01-04",
+    "risk_score": 60
+  },
+  {
+    "patient_id": "TT-0066",
+    "first_name": "Dwayne",
+    "last_name": "Williams",
+    "gender": "Male",
+    "age": 58,
+    "date_of_birth": "1967-10-03",
+    "ethnicity": "Mixed",
+    "region": "Port of Spain",
+    "insurance": "Public (CDAP)",
+    "bmi": 30.0,
+    "blood_pressure": "168/90",
+    "systolic": 168,
+    "diastolic": 90,
+    "hba1c": 5.8,
+    "fasting_glucose": 79.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2006-10-21"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "2011-08-02"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-01-11",
+    "risk_score": 45
+  },
+  {
+    "patient_id": "TT-0067",
+    "first_name": "Indira",
+    "last_name": "Doodnath",
+    "gender": "Female",
+    "age": 27,
+    "date_of_birth": "1998-09-25",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Diego Martin",
+    "insurance": "NHIS",
+    "bmi": 29.0,
+    "blood_pressure": "122/75",
+    "systolic": 122,
+    "diastolic": 75,
+    "hba1c": 5.1,
+    "fasting_glucose": 108.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "2018-09-30"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-15",
+    "risk_score": 15
+  },
+  {
+    "patient_id": "TT-0068",
+    "first_name": "Reshma",
+    "last_name": "Ali",
+    "gender": "Female",
+    "age": 43,
+    "date_of_birth": "1982-06-02",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Tunapuna",
+    "insurance": "Out-of-Pocket",
+    "bmi": 32.1,
+    "blood_pressure": "167/107",
+    "systolic": 167,
+    "diastolic": 107,
+    "hba1c": 5.3,
+    "fasting_glucose": 72.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2023-01-13"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-18",
+    "risk_score": 38
+  },
+  {
+    "patient_id": "TT-0069",
+    "first_name": "Vijay",
+    "last_name": "Persad",
+    "gender": "Male",
+    "age": 63,
+    "date_of_birth": "1963-01-11",
+    "ethnicity": "Mixed",
+    "region": "Port of Spain",
+    "insurance": "Public (CDAP)",
+    "bmi": 28.9,
+    "blood_pressure": "121/80",
+    "systolic": 121,
+    "diastolic": 80,
+    "hba1c": 4.7,
+    "fasting_glucose": 110.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Cancer",
+        "severity": "Stage I",
+        "diagnosed_date": "2016-03-22",
+        "subtype": "Cervical"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Mild",
+        "diagnosed_date": "2020-12-06"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Bicalutamide 50mg",
+        "for_condition": "Cancer",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Palliative Care",
+        "for_condition": "Cancer",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Counseling/Therapy Only",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-25",
+    "risk_score": 36
+  },
+  {
+    "patient_id": "TT-0070",
+    "first_name": "Queenie",
+    "last_name": "Ali",
+    "gender": "Female",
+    "age": 39,
+    "date_of_birth": "1986-11-27",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Couva",
+    "insurance": "Public (CDAP)",
+    "bmi": 21.0,
+    "blood_pressure": "134/67",
+    "systolic": 134,
+    "diastolic": 67,
+    "hba1c": 5.6,
+    "fasting_glucose": 114.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "2016-06-11"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-03",
+    "risk_score": 15
+  },
+  {
+    "patient_id": "TT-0071",
+    "first_name": "Meera",
+    "last_name": "Persad",
+    "gender": "Female",
+    "age": 58,
+    "date_of_birth": "1967-06-04",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Siparia",
+    "insurance": "NHIS",
+    "bmi": 21.6,
+    "blood_pressure": "162/90",
+    "systolic": 162,
+    "diastolic": 90,
+    "hba1c": 5.4,
+    "fasting_glucose": 100.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "1994-06-21"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-10-06",
+    "risk_score": 45
+  },
+  {
+    "patient_id": "TT-0072",
+    "first_name": "Brian",
+    "last_name": "Boodoo",
+    "gender": "Male",
+    "age": 75,
+    "date_of_birth": "1950-05-27",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Scarborough (Tobago)",
+    "insurance": "Out-of-Pocket",
+    "bmi": 23.4,
+    "blood_pressure": "149/102",
+    "systolic": 149,
+    "diastolic": 102,
+    "hba1c": 5.0,
+    "fasting_glucose": 113.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1996-11-04"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-27",
+    "risk_score": 42
+  },
+  {
+    "patient_id": "TT-0073",
+    "first_name": "Darren",
+    "last_name": "Valentine",
+    "gender": "Male",
+    "age": 64,
+    "date_of_birth": "1961-07-03",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Port of Spain",
+    "insurance": "Public (CDAP)",
+    "bmi": 30.2,
+    "blood_pressure": "157/107",
+    "systolic": 157,
+    "diastolic": 107,
+    "hba1c": 5.7,
+    "fasting_glucose": 94.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1996-10-25"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-14",
+    "risk_score": 47
+  },
+  {
+    "patient_id": "TT-0074",
+    "first_name": "Wendy",
+    "last_name": "Fraser",
+    "gender": "Female",
+    "age": 39,
+    "date_of_birth": "1986-10-17",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Point Fortin",
+    "insurance": "Out-of-Pocket",
+    "bmi": 20.7,
+    "blood_pressure": "118/85",
+    "systolic": 118,
+    "diastolic": 85,
+    "hba1c": 5.3,
+    "fasting_glucose": 95.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Mild",
+        "diagnosed_date": "2022-11-09"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Escitalopram 10mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Sertraline 50mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-09",
+    "risk_score": 15
+  },
+  {
+    "patient_id": "TT-0075",
+    "first_name": "Simone",
+    "last_name": "Mohammed",
+    "gender": "Female",
+    "age": 80,
+    "date_of_birth": "1945-10-25",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "Public (CDAP)",
+    "bmi": 33.3,
+    "blood_pressure": "178/109",
+    "systolic": 178,
+    "diastolic": 109,
+    "hba1c": 4.6,
+    "fasting_glucose": 75.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2010-01-25"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-11-23",
+    "risk_score": 56
+  },
+  {
+    "patient_id": "TT-0076",
+    "first_name": "Janelle",
+    "last_name": "Ali",
+    "gender": "Female",
+    "age": 34,
+    "date_of_birth": "1991-05-02",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "Out-of-Pocket",
+    "bmi": 19.7,
+    "blood_pressure": "172/92",
+    "systolic": 172,
+    "diastolic": 92,
+    "hba1c": 5.5,
+    "fasting_glucose": 94.0,
+    "smoker": false,
+    "alcohol_use": "Heavy",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2011-08-02"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-03-18",
+    "risk_score": 31
+  },
+  {
+    "patient_id": "TT-0077",
+    "first_name": "Curtis",
+    "last_name": "Udecott",
+    "gender": "Male",
+    "age": 47,
+    "date_of_birth": "1978-09-18",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Penal",
+    "insurance": "NHIS",
+    "bmi": 27.9,
+    "blood_pressure": "150/100",
+    "systolic": 150,
+    "diastolic": 100,
+    "hba1c": 10.0,
+    "fasting_glucose": 138.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2020-03-01"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2007-09-02"
+      },
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Stable",
+        "diagnosed_date": "2006-11-16"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2024-12-07"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Glimepiride 2mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Atorvastatin 20mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Clopidogrel 75mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-03-17",
+    "risk_score": 68
+  },
+  {
+    "patient_id": "TT-0078",
+    "first_name": "Yashoda",
+    "last_name": "Williams",
+    "gender": "Female",
+    "age": 40,
+    "date_of_birth": "1985-08-02",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Port of Spain",
+    "insurance": "Private Insurance",
+    "bmi": 32.9,
+    "blood_pressure": "160/103",
+    "systolic": 160,
+    "diastolic": 103,
+    "hba1c": 5.7,
+    "fasting_glucose": 116.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2019-09-18"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Atenolol 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-09-27",
+    "risk_score": 30
+  },
+  {
+    "patient_id": "TT-0079",
+    "first_name": "Dwayne",
+    "last_name": "Khan",
+    "gender": "Male",
+    "age": 29,
+    "date_of_birth": "1996-08-18",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Sangre Grande",
+    "insurance": "Out-of-Pocket",
+    "bmi": 29.3,
+    "blood_pressure": "115/76",
+    "systolic": 115,
+    "diastolic": 76,
+    "hba1c": 4.7,
+    "fasting_glucose": 113.0,
+    "smoker": true,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-11",
+    "risk_score": 13
+  },
+  {
+    "patient_id": "TT-0080",
+    "first_name": "Wendy",
+    "last_name": "Ottley",
+    "gender": "Female",
+    "age": 26,
+    "date_of_birth": "1999-11-14",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Tunapuna",
+    "insurance": "Public (CDAP)",
+    "bmi": 18.9,
+    "blood_pressure": "117/81",
+    "systolic": 117,
+    "diastolic": 81,
+    "hba1c": 4.5,
+    "fasting_glucose": 117.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-03-17",
+    "risk_score": 5
+  },
+  {
+    "patient_id": "TT-0081",
+    "first_name": "Kevon",
+    "last_name": "Doodnath",
+    "gender": "Male",
+    "age": 71,
+    "date_of_birth": "1954-12-15",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Siparia",
+    "insurance": "Private Insurance",
+    "bmi": 31.5,
+    "blood_pressure": "150/89",
+    "systolic": 150,
+    "diastolic": 89,
+    "hba1c": 4.5,
+    "fasting_glucose": 93.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "1995-12-08"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "2011-06-16"
+      },
+      {
+        "condition": "HIV/AIDS",
+        "severity": "Well Controlled (Undetectable)",
+        "diagnosed_date": "1998-03-16"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Iron Supplement",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Tenofovir/Emtricitabine",
+        "for_condition": "HIV/AIDS",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-01-20",
+    "risk_score": 82
+  },
+  {
+    "patient_id": "TT-0082",
+    "first_name": "Devika",
+    "last_name": "Charles",
+    "gender": "Female",
+    "age": 66,
+    "date_of_birth": "1959-11-01",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Couva",
+    "insurance": "Public (CDAP)",
+    "bmi": 38.6,
+    "blood_pressure": "179/108",
+    "systolic": 179,
+    "diastolic": 108,
+    "hba1c": 5.1,
+    "fasting_glucose": 95.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2024-03-02"
+      },
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Mild Intermittent",
+        "diagnosed_date": "2022-10-12"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Ipratropium Inhaler",
+        "for_condition": "Asthma / COPD",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-01-20",
+    "risk_score": 75
+  },
+  {
+    "patient_id": "TT-0083",
+    "first_name": "Kevon",
+    "last_name": "James",
+    "gender": "Male",
+    "age": 75,
+    "date_of_birth": "1950-08-14",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "San Fernando",
+    "insurance": "Public (CDAP)",
+    "bmi": 37.6,
+    "blood_pressure": "120/69",
+    "systolic": 120,
+    "diastolic": 69,
+    "hba1c": 4.7,
+    "fasting_glucose": 84.0,
+    "smoker": true,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-12-19",
+    "risk_score": 40
+  },
+  {
+    "patient_id": "TT-0084",
+    "first_name": "Ravi",
+    "last_name": "Udecott",
+    "gender": "Male",
+    "age": 69,
+    "date_of_birth": "1956-08-19",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Couva",
+    "insurance": "Public (CDAP)",
+    "bmi": 30.1,
+    "blood_pressure": "123/77",
+    "systolic": 123,
+    "diastolic": 77,
+    "hba1c": 9.2,
+    "fasting_glucose": 193.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Moderately Controlled",
+        "diagnosed_date": "1988-11-21"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Mild",
+        "diagnosed_date": "1988-12-07"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Sertraline 50mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Fluoxetine 20mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-12-01",
+    "risk_score": 66
+  },
+  {
+    "patient_id": "TT-0085",
+    "first_name": "Jason",
+    "last_name": "Lewis",
+    "gender": "Male",
+    "age": 49,
+    "date_of_birth": "1976-05-06",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Siparia",
+    "insurance": "Public (CDAP)",
+    "bmi": 33.0,
+    "blood_pressure": "122/73",
+    "systolic": 122,
+    "diastolic": 73,
+    "hba1c": 4.8,
+    "fasting_glucose": 88.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Stable",
+        "diagnosed_date": "2002-07-21"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Clopidogrel 75mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-01-23",
+    "risk_score": 24
+  },
+  {
+    "patient_id": "TT-0086",
+    "first_name": "Devika",
+    "last_name": "Doodnath",
+    "gender": "Female",
+    "age": 47,
+    "date_of_birth": "1979-01-11",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Tunapuna",
+    "insurance": "Private Insurance",
+    "bmi": 24.1,
+    "blood_pressure": "171/91",
+    "systolic": 171,
+    "diastolic": 91,
+    "hba1c": 6.1,
+    "fasting_glucose": 115.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2008-09-18"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Atenolol 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-14",
+    "risk_score": 40
+  },
+  {
+    "patient_id": "TT-0087",
+    "first_name": "Kevon",
+    "last_name": "Gonzales",
+    "gender": "Male",
+    "age": 79,
+    "date_of_birth": "1947-04-10",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Sangre Grande",
+    "insurance": "Out-of-Pocket",
+    "bmi": 35.2,
+    "blood_pressure": "146/107",
+    "systolic": 146,
+    "diastolic": 107,
+    "hba1c": 11.8,
+    "fasting_glucose": 247.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2011-08-16"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "1983-01-19"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Insulin Glargine",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-14",
+    "risk_score": 92
+  },
+  {
+    "patient_id": "TT-0088",
+    "first_name": "Farzana",
+    "last_name": "Udecott",
+    "gender": "Female",
+    "age": 55,
+    "date_of_birth": "1971-01-29",
+    "ethnicity": "Mixed",
+    "region": "Port of Spain",
+    "insurance": "Public (CDAP)",
+    "bmi": 25.6,
+    "blood_pressure": "112/85",
+    "systolic": 112,
+    "diastolic": 85,
+    "hba1c": 5.9,
+    "fasting_glucose": 88.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "2000-10-08"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Calcium Carbonate 500mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Iron Supplement",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-03-18",
+    "risk_score": 34
+  },
+  {
+    "patient_id": "TT-0089",
+    "first_name": "Omar",
+    "last_name": "Udecott",
+    "gender": "Male",
+    "age": 24,
+    "date_of_birth": "2001-09-11",
+    "ethnicity": "Mixed",
+    "region": "Siparia",
+    "insurance": "Public (CDAP)",
+    "bmi": 28.6,
+    "blood_pressure": "111/74",
+    "systolic": 111,
+    "diastolic": 74,
+    "hba1c": 4.5,
+    "fasting_glucose": 84.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-02-22",
+    "risk_score": 0
+  },
+  {
+    "patient_id": "TT-0090",
+    "first_name": "Avinash",
+    "last_name": "James",
+    "gender": "Male",
+    "age": 79,
+    "date_of_birth": "1946-04-15",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Tunapuna",
+    "insurance": "Public (CDAP)",
+    "bmi": 29.3,
+    "blood_pressure": "142/94",
+    "systolic": 142,
+    "diastolic": 94,
+    "hba1c": 10.8,
+    "fasting_glucose": 208.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Uncontrolled",
+        "diagnosed_date": "2016-12-01"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2012-10-18"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 1-2",
+        "diagnosed_date": "1998-02-05"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Iron Supplement",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-02",
+    "risk_score": 94
+  },
+  {
+    "patient_id": "TT-0091",
+    "first_name": "Indira",
+    "last_name": "Khan",
+    "gender": "Female",
+    "age": 75,
+    "date_of_birth": "1951-03-18",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "Private Insurance",
+    "bmi": 31.7,
+    "blood_pressure": "117/80",
+    "systolic": 117,
+    "diastolic": 80,
+    "hba1c": 5.1,
+    "fasting_glucose": 92.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "1989-11-19"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2026-03-12",
+    "risk_score": 42
+  },
+  {
+    "patient_id": "TT-0092",
+    "first_name": "Farouk",
+    "last_name": "Charles",
+    "gender": "Male",
+    "age": 75,
+    "date_of_birth": "1951-01-11",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Penal",
+    "insurance": "Private Insurance",
+    "bmi": 22.9,
+    "blood_pressure": "169/96",
+    "systolic": 169,
+    "diastolic": 96,
+    "hba1c": 11.3,
+    "fasting_glucose": 172.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2017-01-29"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2008-04-24"
+      },
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Moderate",
+        "diagnosed_date": "2021-02-02"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Glimepiride 2mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Rosuvastatin 10mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-04",
+    "risk_score": 100
+  },
+  {
+    "patient_id": "TT-0093",
+    "first_name": "Marcus",
+    "last_name": "De Silva",
+    "gender": "Male",
+    "age": 69,
+    "date_of_birth": "1957-03-19",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Fyzabad",
+    "insurance": "Out-of-Pocket",
+    "bmi": 25.6,
+    "blood_pressure": "163/91",
+    "systolic": 163,
+    "diastolic": 91,
+    "hba1c": 6.2,
+    "fasting_glucose": 92.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "1989-06-21"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Atenolol 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-11-16",
+    "risk_score": 46
+  },
+  {
+    "patient_id": "TT-0094",
+    "first_name": "Emile",
+    "last_name": "Valentine",
+    "gender": "Male",
+    "age": 82,
+    "date_of_birth": "1943-09-17",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "Private Insurance",
+    "bmi": 26.0,
+    "blood_pressure": "166/104",
+    "systolic": 166,
+    "diastolic": 104,
+    "hba1c": 5.3,
+    "fasting_glucose": 123.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2024-08-27"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-19",
+    "risk_score": 41
+  },
+  {
+    "patient_id": "TT-0095",
+    "first_name": "Farouk",
+    "last_name": "Boodoo",
+    "gender": "Male",
+    "age": 67,
+    "date_of_birth": "1959-03-13",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Sangre Grande",
+    "insurance": "NHIS",
+    "bmi": 18.0,
+    "blood_pressure": "180/107",
+    "systolic": 180,
+    "diastolic": 107,
+    "hba1c": 5.7,
+    "fasting_glucose": 93.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1996-11-28"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-14",
+    "risk_score": 38
+  },
+  {
+    "patient_id": "TT-0096",
+    "first_name": "Vanessa",
+    "last_name": "Young",
+    "gender": "Female",
+    "age": 18,
+    "date_of_birth": "2007-07-08",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "NHIS",
+    "bmi": 19.2,
+    "blood_pressure": "132/85",
+    "systolic": 132,
+    "diastolic": 85,
+    "hba1c": 5.1,
+    "fasting_glucose": 78.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-18",
+    "risk_score": 0
+  },
+  {
+    "patient_id": "TT-0097",
+    "first_name": "Priya",
+    "last_name": "Fraser",
+    "gender": "Female",
+    "age": 21,
+    "date_of_birth": "2004-04-25",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Point Fortin",
+    "insurance": "NHIS",
+    "bmi": 18.0,
+    "blood_pressure": "121/81",
+    "systolic": 121,
+    "diastolic": 81,
+    "hba1c": 5.1,
+    "fasting_glucose": 79.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-10-03",
+    "risk_score": 5
+  },
+  {
+    "patient_id": "TT-0098",
+    "first_name": "Kavita",
+    "last_name": "Garcia",
+    "gender": "Female",
+    "age": 41,
+    "date_of_birth": "1984-04-17",
+    "ethnicity": "Mixed",
+    "region": "Tunapuna",
+    "insurance": "NHIS",
+    "bmi": 29.5,
+    "blood_pressure": "180/90",
+    "systolic": 180,
+    "diastolic": 90,
+    "hba1c": 10.8,
+    "fasting_glucose": 211.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2018-09-15"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2012-03-20"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2006-08-10"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Glimepiride 2mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-10",
+    "risk_score": 50
+  },
+  {
+    "patient_id": "TT-0099",
+    "first_name": "Zahir",
+    "last_name": "Ali",
+    "gender": "Male",
+    "age": 39,
+    "date_of_birth": "1986-06-09",
+    "ethnicity": "Mixed",
+    "region": "Princes Town",
+    "insurance": "Private Insurance",
+    "bmi": 26.8,
+    "blood_pressure": "111/74",
+    "systolic": 111,
+    "diastolic": 74,
+    "hba1c": 6.3,
+    "fasting_glucose": 95.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Cancer",
+        "severity": "Stage II",
+        "diagnosed_date": "2009-02-28",
+        "subtype": "Lung"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Moderate",
+        "diagnosed_date": "2019-02-20"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Surgical Management",
+        "for_condition": "Cancer",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Counseling/Therapy Only",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-07",
+    "risk_score": 32
+  },
+  {
+    "patient_id": "TT-0100",
+    "first_name": "Yashoda",
+    "last_name": "Charles",
+    "gender": "Female",
+    "age": 80,
+    "date_of_birth": "1945-10-09",
+    "ethnicity": "Other",
+    "region": "Chaguanas",
+    "insurance": "Private Insurance",
+    "bmi": 29.4,
+    "blood_pressure": "130/66",
+    "systolic": 130,
+    "diastolic": 66,
+    "hba1c": 5.2,
+    "fasting_glucose": 105.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-11-04",
+    "risk_score": 25
+  },
+  {
+    "patient_id": "TT-0101",
+    "first_name": "Omar",
+    "last_name": "Isaac",
+    "gender": "Male",
+    "age": 32,
+    "date_of_birth": "1993-08-28",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "San Fernando",
+    "insurance": "Out-of-Pocket",
+    "bmi": 34.2,
+    "blood_pressure": "113/81",
+    "systolic": 113,
+    "diastolic": 81,
+    "hba1c": 5.9,
+    "fasting_glucose": 76.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-02-19",
+    "risk_score": 10
+  },
+  {
+    "patient_id": "TT-0102",
+    "first_name": "Farouk",
+    "last_name": "Singh",
+    "gender": "Male",
+    "age": 70,
+    "date_of_birth": "1955-11-08",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Couva",
+    "insurance": "Public (CDAP)",
+    "bmi": 35.4,
+    "blood_pressure": "158/110",
+    "systolic": 158,
+    "diastolic": 110,
+    "hba1c": 5.8,
+    "fasting_glucose": 93.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "1996-01-04"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "2015-10-08"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Calcium Carbonate 500mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Erythropoietin",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-02-19",
+    "risk_score": 88
+  },
+  {
+    "patient_id": "TT-0103",
+    "first_name": "Isaiah",
+    "last_name": "De Silva",
+    "gender": "Male",
+    "age": 74,
+    "date_of_birth": "1951-05-26",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Diego Martin",
+    "insurance": "Out-of-Pocket",
+    "bmi": 37.1,
+    "blood_pressure": "125/83",
+    "systolic": 125,
+    "diastolic": 83,
+    "hba1c": 10.2,
+    "fasting_glucose": 158.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Uncontrolled",
+        "diagnosed_date": "2005-08-29"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-12-13",
+    "risk_score": 69
+  },
+  {
+    "patient_id": "TT-0104",
+    "first_name": "Rishi",
+    "last_name": "James",
+    "gender": "Male",
+    "age": 80,
+    "date_of_birth": "1946-02-12",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "Public (CDAP)",
+    "bmi": 34.8,
+    "blood_pressure": "139/109",
+    "systolic": 139,
+    "diastolic": 109,
+    "hba1c": 9.2,
+    "fasting_glucose": 168.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "1995-09-23"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2021-11-12"
+      },
+      {
+        "condition": "Sickle Cell Disease",
+        "severity": "Moderate",
+        "diagnosed_date": "1987-12-04"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Glimepiride 2mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Pain Management",
+        "for_condition": "Sickle Cell Disease",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2026-01-08",
+    "risk_score": 86
+  },
+  {
+    "patient_id": "TT-0105",
+    "first_name": "Omar",
+    "last_name": "Williams",
+    "gender": "Male",
+    "age": 74,
+    "date_of_birth": "1951-06-20",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "Out-of-Pocket",
+    "bmi": 28.3,
+    "blood_pressure": "180/106",
+    "systolic": 180,
+    "diastolic": 106,
+    "hba1c": 5.2,
+    "fasting_glucose": 95.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2024-07-12"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2026-02-24",
+    "risk_score": 59
+  },
+  {
+    "patient_id": "TT-0106",
+    "first_name": "Devika",
+    "last_name": "Singh",
+    "gender": "Female",
+    "age": 65,
+    "date_of_birth": "1960-04-12",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Fyzabad",
+    "insurance": "Public (CDAP)",
+    "bmi": 20.1,
+    "blood_pressure": "126/70",
+    "systolic": 126,
+    "diastolic": 70,
+    "hba1c": 10.3,
+    "fasting_glucose": 156.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "1998-09-26"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "2005-08-15"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Glimepiride 2mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Iron Supplement",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Erythropoietin",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-02-16",
+    "risk_score": 58
+  },
+  {
+    "patient_id": "TT-0107",
+    "first_name": "Meera",
+    "last_name": "Garcia",
+    "gender": "Female",
+    "age": 49,
+    "date_of_birth": "1976-11-13",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Point Fortin",
+    "insurance": "NHIS",
+    "bmi": 25.8,
+    "blood_pressure": "142/109",
+    "systolic": 142,
+    "diastolic": 109,
+    "hba1c": 5.2,
+    "fasting_glucose": 96.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2001-07-25"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-25",
+    "risk_score": 24
+  },
+  {
+    "patient_id": "TT-0108",
+    "first_name": "Queenie",
+    "last_name": "Ramnath",
+    "gender": "Female",
+    "age": 72,
+    "date_of_birth": "1954-04-02",
+    "ethnicity": "Mixed",
+    "region": "Port of Spain",
+    "insurance": "Public (CDAP)",
+    "bmi": 22.9,
+    "blood_pressure": "179/94",
+    "systolic": 179,
+    "diastolic": 94,
+    "hba1c": 5.8,
+    "fasting_glucose": 73.0,
+    "smoker": false,
+    "alcohol_use": "Heavy",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2013-04-13"
+      },
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Moderate",
+        "diagnosed_date": "2010-01-18"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Atorvastatin 20mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-12-13",
+    "risk_score": 62
+  },
+  {
+    "patient_id": "TT-0109",
+    "first_name": "Tyrone",
+    "last_name": "Boodoo",
+    "gender": "Male",
+    "age": 50,
+    "date_of_birth": "1975-12-21",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Penal",
+    "insurance": "Private Insurance",
+    "bmi": 21.2,
+    "blood_pressure": "143/90",
+    "systolic": 143,
+    "diastolic": 90,
+    "hba1c": 5.6,
+    "fasting_glucose": 84.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2009-08-22"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-26",
+    "risk_score": 25
+  },
+  {
+    "patient_id": "TT-0110",
+    "first_name": "Andre",
+    "last_name": "Ottley",
+    "gender": "Male",
+    "age": 56,
+    "date_of_birth": "1969-07-27",
+    "ethnicity": "Mixed",
+    "region": "Couva",
+    "insurance": "Public (CDAP)",
+    "bmi": 30.5,
+    "blood_pressure": "134/84",
+    "systolic": 134,
+    "diastolic": 84,
+    "hba1c": 5.5,
+    "fasting_glucose": 125.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "2022-01-05"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Furosemide 40mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-05",
+    "risk_score": 34
+  },
+  {
+    "patient_id": "TT-0111",
+    "first_name": "Stefan",
+    "last_name": "Warner",
+    "gender": "Male",
+    "age": 59,
+    "date_of_birth": "1966-09-22",
+    "ethnicity": "Other",
+    "region": "San Fernando",
+    "insurance": "NHIS",
+    "bmi": 19.9,
+    "blood_pressure": "116/85",
+    "systolic": 116,
+    "diastolic": 85,
+    "hba1c": 6.0,
+    "fasting_glucose": 118.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Severe",
+        "diagnosed_date": "2021-10-31"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amitriptyline 25mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-12-02",
+    "risk_score": 36
+  },
+  {
+    "patient_id": "TT-0112",
+    "first_name": "Esther",
+    "last_name": "Mohammed",
+    "gender": "Female",
+    "age": 27,
+    "date_of_birth": "1998-04-11",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "Out-of-Pocket",
+    "bmi": 25.9,
+    "blood_pressure": "153/110",
+    "systolic": 153,
+    "diastolic": 110,
+    "hba1c": 5.8,
+    "fasting_glucose": 103.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2024-07-22"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Moderate",
+        "diagnosed_date": "2025-02-12"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Escitalopram 10mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-01-07",
+    "risk_score": 41
+  },
+  {
+    "patient_id": "TT-0113",
+    "first_name": "Xena",
+    "last_name": "Isaac",
+    "gender": "Female",
+    "age": 46,
+    "date_of_birth": "1980-01-23",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Penal",
+    "insurance": "Public (CDAP)",
+    "bmi": 23.5,
+    "blood_pressure": "115/70",
+    "systolic": 115,
+    "diastolic": 70,
+    "hba1c": 4.9,
+    "fasting_glucose": 116.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2009-05-26"
+      },
+      {
+        "condition": "HIV/AIDS",
+        "severity": "Controlled",
+        "diagnosed_date": "2012-06-20"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Lamivudine/Zidovudine",
+        "for_condition": "HIV/AIDS",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-01-30",
+    "risk_score": 28
+  },
+  {
+    "patient_id": "TT-0114",
+    "first_name": "Vanessa",
+    "last_name": "Williams",
+    "gender": "Female",
+    "age": 27,
+    "date_of_birth": "1998-10-31",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Point Fortin",
+    "insurance": "Public (CDAP)",
+    "bmi": 22.3,
+    "blood_pressure": "124/75",
+    "systolic": 124,
+    "diastolic": 75,
+    "hba1c": 5.7,
+    "fasting_glucose": 87.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "5+/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-10-22",
+    "risk_score": 0
+  },
+  {
+    "patient_id": "TT-0115",
+    "first_name": "Xavier",
+    "last_name": "Udecott",
+    "gender": "Male",
+    "age": 49,
+    "date_of_birth": "1976-12-10",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Tunapuna",
+    "insurance": "Public (CDAP)",
+    "bmi": 19.2,
+    "blood_pressure": "114/82",
+    "systolic": 114,
+    "diastolic": 82,
+    "hba1c": 4.9,
+    "fasting_glucose": 110.0,
+    "smoker": true,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-10-11",
+    "risk_score": 12
+  },
+  {
+    "patient_id": "TT-0116",
+    "first_name": "Gregory",
+    "last_name": "Gonzales",
+    "gender": "Male",
+    "age": 69,
+    "date_of_birth": "1956-06-09",
+    "ethnicity": "Mixed",
+    "region": "Port of Spain",
+    "insurance": "Public (CDAP)",
+    "bmi": 20.9,
+    "blood_pressure": "174/106",
+    "systolic": 174,
+    "diastolic": 106,
+    "hba1c": 4.8,
+    "fasting_glucose": 98.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2009-09-23"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-26",
+    "risk_score": 46
+  },
+  {
+    "patient_id": "TT-0117",
+    "first_name": "Brian",
+    "last_name": "Doodnath",
+    "gender": "Male",
+    "age": 79,
+    "date_of_birth": "1946-10-09",
+    "ethnicity": "Mixed",
+    "region": "Penal",
+    "insurance": "Private Insurance",
+    "bmi": 21.5,
+    "blood_pressure": "168/93",
+    "systolic": 168,
+    "diastolic": 93,
+    "hba1c": 5.2,
+    "fasting_glucose": 120.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1985-06-02"
+      },
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Moderate Persistent",
+        "diagnosed_date": "1997-09-19"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Prednisolone 5mg",
+        "for_condition": "Asthma / COPD",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-11-08",
+    "risk_score": 60
+  },
+  {
+    "patient_id": "TT-0118",
+    "first_name": "Farouk",
+    "last_name": "Doodnath",
+    "gender": "Male",
+    "age": 35,
+    "date_of_birth": "1990-08-17",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "San Fernando",
+    "insurance": "Private Insurance",
+    "bmi": 18.9,
+    "blood_pressure": "150/86",
+    "systolic": 150,
+    "diastolic": 86,
+    "hba1c": 4.7,
+    "fasting_glucose": 103.0,
+    "smoker": true,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2007-10-25"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Losartan 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-02-14",
+    "risk_score": 33
+  },
+  {
+    "patient_id": "TT-0119",
+    "first_name": "Tricia",
+    "last_name": "Ottley",
+    "gender": "Female",
+    "age": 84,
+    "date_of_birth": "1941-09-16",
+    "ethnicity": "Other",
+    "region": "Tunapuna",
+    "insurance": "Private Insurance",
+    "bmi": 32.4,
+    "blood_pressure": "142/87",
+    "systolic": 142,
+    "diastolic": 87,
+    "hba1c": 9.2,
+    "fasting_glucose": 149.0,
+    "smoker": true,
+    "alcohol_use": "Heavy",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Moderately Controlled",
+        "diagnosed_date": "1985-11-02"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2009-10-27"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "1980-11-21"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Erythropoietin",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-10-17",
+    "risk_score": 100
+  },
+  {
+    "patient_id": "TT-0120",
+    "first_name": "Wendy",
+    "last_name": "Maharaj",
+    "gender": "Female",
+    "age": 65,
+    "date_of_birth": "1961-03-15",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Siparia",
+    "insurance": "Private Insurance",
+    "bmi": 22.8,
+    "blood_pressure": "178/97",
+    "systolic": 178,
+    "diastolic": 97,
+    "hba1c": 10.7,
+    "fasting_glucose": 198.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Uncontrolled",
+        "diagnosed_date": "1992-11-18"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2007-10-22"
+      },
+      {
+        "condition": "HIV/AIDS",
+        "severity": "Controlled",
+        "diagnosed_date": "2019-03-13"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Atenolol 50mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Tenofovir/Emtricitabine",
+        "for_condition": "HIV/AIDS",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Dolutegravir 50mg",
+        "for_condition": "HIV/AIDS",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-29",
+    "risk_score": 86
+  },
+  {
+    "patient_id": "TT-0121",
+    "first_name": "Donna",
+    "last_name": "Boodoo",
+    "gender": "Female",
+    "age": 68,
+    "date_of_birth": "1958-01-27",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Tunapuna",
+    "insurance": "Private Insurance",
+    "bmi": 29.9,
+    "blood_pressure": "135/81",
+    "systolic": 135,
+    "diastolic": 81,
+    "hba1c": 8.1,
+    "fasting_glucose": 132.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2003-05-03"
+      },
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Stable",
+        "diagnosed_date": "2006-08-10"
+      },
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Mild Intermittent",
+        "diagnosed_date": "1998-08-06"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Sitagliptin 100mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Metoprolol 50mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Prednisolone 5mg",
+        "for_condition": "Asthma / COPD",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-10-18",
+    "risk_score": 54
+  },
+  {
+    "patient_id": "TT-0122",
+    "first_name": "Camille",
+    "last_name": "Edwards",
+    "gender": "Female",
+    "age": 18,
+    "date_of_birth": "2008-01-05",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Penal",
+    "insurance": "Public (CDAP)",
+    "bmi": 35.2,
+    "blood_pressure": "126/73",
+    "systolic": 126,
+    "diastolic": 73,
+    "hba1c": 6.2,
+    "fasting_glucose": 115.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Moderate Persistent",
+        "diagnosed_date": "2019-11-13"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Mild",
+        "diagnosed_date": "2020-06-30"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Montelukast 10mg",
+        "for_condition": "Asthma / COPD",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Fluticasone Inhaler",
+        "for_condition": "Asthma / COPD",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Amitriptyline 25mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-24",
+    "risk_score": 41
+  },
+  {
+    "patient_id": "TT-0123",
+    "first_name": "Omar",
+    "last_name": "De Silva",
+    "gender": "Male",
+    "age": 76,
+    "date_of_birth": "1949-04-26",
+    "ethnicity": "Mixed",
+    "region": "Sangre Grande",
+    "insurance": "Public (CDAP)",
+    "bmi": 23.7,
+    "blood_pressure": "146/100",
+    "systolic": 146,
+    "diastolic": 100,
+    "hba1c": 5.1,
+    "fasting_glucose": 82.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2016-04-02"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-10-25",
+    "risk_score": 43
+  },
+  {
+    "patient_id": "TT-0124",
+    "first_name": "Donna",
+    "last_name": "Edwards",
+    "gender": "Female",
+    "age": 48,
+    "date_of_birth": "1977-11-30",
+    "ethnicity": "Mixed",
+    "region": "Arima",
+    "insurance": "Public (CDAP)",
+    "bmi": 33.4,
+    "blood_pressure": "134/81",
+    "systolic": 134,
+    "diastolic": 81,
+    "hba1c": 5.0,
+    "fasting_glucose": 82.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Sickle Cell Disease",
+        "severity": "Severe",
+        "diagnosed_date": "2011-12-28"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Pain Management",
+        "for_condition": "Sickle Cell Disease",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Folic Acid 5mg",
+        "for_condition": "Sickle Cell Disease",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-10-24",
+    "risk_score": 41
+  },
+  {
+    "patient_id": "TT-0125",
+    "first_name": "Zahir",
+    "last_name": "Ali",
+    "gender": "Male",
+    "age": 68,
+    "date_of_birth": "1957-04-21",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "Private Insurance",
+    "bmi": 29.6,
+    "blood_pressure": "158/96",
+    "systolic": 158,
+    "diastolic": 96,
+    "hba1c": 6.1,
+    "fasting_glucose": 85.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2000-01-28"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-02-02",
+    "risk_score": 34
+  },
+  {
+    "patient_id": "TT-0126",
+    "first_name": "Giselle",
+    "last_name": "Joseph",
+    "gender": "Female",
+    "age": 73,
+    "date_of_birth": "1952-09-25",
+    "ethnicity": "Mixed",
+    "region": "Penal",
+    "insurance": "NHIS",
+    "bmi": 35.8,
+    "blood_pressure": "151/96",
+    "systolic": 151,
+    "diastolic": 96,
+    "hba1c": 4.5,
+    "fasting_glucose": 77.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "1988-01-14"
+      },
+      {
+        "condition": "Cancer",
+        "severity": "Stage IV",
+        "diagnosed_date": "2005-12-16",
+        "subtype": "Lymphoma"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Bicalutamide 50mg",
+        "for_condition": "Cancer",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-09-28",
+    "risk_score": 80
+  },
+  {
+    "patient_id": "TT-0127",
+    "first_name": "Kevon",
+    "last_name": "Sookdeo",
+    "gender": "Male",
+    "age": 54,
+    "date_of_birth": "1971-10-05",
+    "ethnicity": "Other",
+    "region": "Couva",
+    "insurance": "Out-of-Pocket",
+    "bmi": 22.6,
+    "blood_pressure": "112/67",
+    "systolic": 112,
+    "diastolic": 67,
+    "hba1c": 4.8,
+    "fasting_glucose": 83.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-12-29",
+    "risk_score": 7
+  },
+  {
+    "patient_id": "TT-0128",
+    "first_name": "Queenie",
+    "last_name": "Khan",
+    "gender": "Female",
+    "age": 64,
+    "date_of_birth": "1961-06-10",
+    "ethnicity": "Mixed",
+    "region": "Siparia",
+    "insurance": "NHIS",
+    "bmi": 22.2,
+    "blood_pressure": "171/98",
+    "systolic": 171,
+    "diastolic": 98,
+    "hba1c": 9.4,
+    "fasting_glucose": 237.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Uncontrolled",
+        "diagnosed_date": "2014-11-07"
+      },
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "1991-07-23"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class III (BMI 40+)",
+        "diagnosed_date": "1993-01-19"
+      },
+      {
+        "condition": "Cancer",
+        "severity": "Stage II",
+        "diagnosed_date": "2001-11-21",
+        "subtype": "Colorectal"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Surgical Management",
+        "for_condition": "Cancer",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Letrozole 2.5mg",
+        "for_condition": "Cancer",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-31",
+    "risk_score": 95
+  },
+  {
+    "patient_id": "TT-0129",
+    "first_name": "Janelle",
+    "last_name": "Mohammed",
+    "gender": "Female",
+    "age": 51,
+    "date_of_birth": "1975-01-14",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Port of Spain",
+    "insurance": "Private Insurance",
+    "bmi": 29.7,
+    "blood_pressure": "135/65",
+    "systolic": 135,
+    "diastolic": 65,
+    "hba1c": 5.5,
+    "fasting_glucose": 80.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-10-28",
+    "risk_score": 6
+  },
+  {
+    "patient_id": "TT-0130",
+    "first_name": "Uma",
+    "last_name": "Doodnath",
+    "gender": "Female",
+    "age": 28,
+    "date_of_birth": "1997-08-24",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Couva",
+    "insurance": "Out-of-Pocket",
+    "bmi": 20.4,
+    "blood_pressure": "119/68",
+    "systolic": 119,
+    "diastolic": 68,
+    "hba1c": 5.7,
+    "fasting_glucose": 104.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2026-01-10",
+    "risk_score": 5
+  },
+  {
+    "patient_id": "TT-0131",
+    "first_name": "Isaiah",
+    "last_name": "Joseph",
+    "gender": "Male",
+    "age": 31,
+    "date_of_birth": "1994-11-05",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Diego Martin",
+    "insurance": "Out-of-Pocket",
+    "bmi": 28.0,
+    "blood_pressure": "163/92",
+    "systolic": 163,
+    "diastolic": 92,
+    "hba1c": 5.9,
+    "fasting_glucose": 72.0,
+    "smoker": true,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2016-09-17"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 1-2",
+        "diagnosed_date": "2017-05-03"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Calcium Carbonate 500mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Erythropoietin",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-23",
+    "risk_score": 43
+  },
+  {
+    "patient_id": "TT-0132",
+    "first_name": "Farzana",
+    "last_name": "Ramkissoon",
+    "gender": "Female",
+    "age": 57,
+    "date_of_birth": "1968-10-21",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Diego Martin",
+    "insurance": "Private Insurance",
+    "bmi": 23.4,
+    "blood_pressure": "135/72",
+    "systolic": 135,
+    "diastolic": 72,
+    "hba1c": 6.5,
+    "fasting_glucose": 133.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Uncontrolled",
+        "diagnosed_date": "1997-06-30"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-09-25",
+    "risk_score": 36
+  },
+  {
+    "patient_id": "TT-0133",
+    "first_name": "Brian",
+    "last_name": "Singh",
+    "gender": "Male",
+    "age": 61,
+    "date_of_birth": "1964-05-20",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Scarborough (Tobago)",
+    "insurance": "Public (CDAP)",
+    "bmi": 25.1,
+    "blood_pressure": "147/103",
+    "systolic": 147,
+    "diastolic": 103,
+    "hba1c": 4.9,
+    "fasting_glucose": 89.0,
+    "smoker": false,
+    "alcohol_use": "Heavy",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2001-02-02"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-11-21",
+    "risk_score": 46
+  },
+  {
+    "patient_id": "TT-0134",
+    "first_name": "Darren",
+    "last_name": "Edwards",
+    "gender": "Male",
+    "age": 75,
+    "date_of_birth": "1950-11-09",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Couva",
+    "insurance": "Public (CDAP)",
+    "bmi": 35.7,
+    "blood_pressure": "174/94",
+    "systolic": 174,
+    "diastolic": 94,
+    "hba1c": 5.1,
+    "fasting_glucose": 105.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2025-04-19"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-02-20",
+    "risk_score": 58
+  },
+  {
+    "patient_id": "TT-0135",
+    "first_name": "Prakash",
+    "last_name": "Charles",
+    "gender": "Male",
+    "age": 43,
+    "date_of_birth": "1983-02-06",
+    "ethnicity": "Mixed",
+    "region": "San Fernando",
+    "insurance": "Private Insurance",
+    "bmi": 28.1,
+    "blood_pressure": "116/81",
+    "systolic": 116,
+    "diastolic": 81,
+    "hba1c": 10.1,
+    "fasting_glucose": 225.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Moderately Controlled",
+        "diagnosed_date": "2014-08-28"
+      },
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Severe",
+        "diagnosed_date": "2022-07-20"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2023-07-10"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Atorvastatin 20mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-02-03",
+    "risk_score": 64
+  },
+  {
+    "patient_id": "TT-0136",
+    "first_name": "Farzana",
+    "last_name": "Warner",
+    "gender": "Female",
+    "age": 72,
+    "date_of_birth": "1954-02-14",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Chaguanas",
+    "insurance": "NHIS",
+    "bmi": 32.9,
+    "blood_pressure": "159/109",
+    "systolic": 159,
+    "diastolic": 109,
+    "hba1c": 5.5,
+    "fasting_glucose": 111.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2010-05-02"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-18",
+    "risk_score": 52
+  },
+  {
+    "patient_id": "TT-0137",
+    "first_name": "Kavita",
+    "last_name": "Fraser",
+    "gender": "Female",
+    "age": 84,
+    "date_of_birth": "1942-02-01",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Port of Spain",
+    "insurance": "Public (CDAP)",
+    "bmi": 34.4,
+    "blood_pressure": "141/104",
+    "systolic": 141,
+    "diastolic": 104,
+    "hba1c": 5.7,
+    "fasting_glucose": 72.0,
+    "smoker": false,
+    "alcohol_use": "Heavy",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2001-05-19"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "1999-03-13"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Orlistat 120mg",
+        "for_condition": "Obesity",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-10-24",
+    "risk_score": 78
+  },
+  {
+    "patient_id": "TT-0138",
+    "first_name": "Xena",
+    "last_name": "Ramkissoon",
+    "gender": "Female",
+    "age": 33,
+    "date_of_birth": "1992-12-03",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Rio Claro",
+    "insurance": "Public (CDAP)",
+    "bmi": 22.4,
+    "blood_pressure": "167/87",
+    "systolic": 167,
+    "diastolic": 87,
+    "hba1c": 4.9,
+    "fasting_glucose": 86.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2025-03-19"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-10",
+    "risk_score": 26
+  },
+  {
+    "patient_id": "TT-0139",
+    "first_name": "Nalini",
+    "last_name": "Valentine",
+    "gender": "Female",
+    "age": 69,
+    "date_of_birth": "1956-07-25",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Diego Martin",
+    "insurance": "Public (CDAP)",
+    "bmi": 21.5,
+    "blood_pressure": "135/79",
+    "systolic": 135,
+    "diastolic": 79,
+    "hba1c": 9.9,
+    "fasting_glucose": 203.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "1996-11-17"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Moderate",
+        "diagnosed_date": "2010-09-07"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Sertraline 50mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-01-20",
+    "risk_score": 50
+  },
+  {
+    "patient_id": "TT-0140",
+    "first_name": "Stefan",
+    "last_name": "Joseph",
+    "gender": "Male",
+    "age": 49,
+    "date_of_birth": "1976-05-20",
+    "ethnicity": "Mixed",
+    "region": "Rio Claro",
+    "insurance": "Out-of-Pocket",
+    "bmi": 35.8,
+    "blood_pressure": "138/99",
+    "systolic": 138,
+    "diastolic": 99,
+    "hba1c": 5.7,
+    "fasting_glucose": 70.0,
+    "smoker": false,
+    "alcohol_use": "Heavy",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2011-04-02"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Moderate",
+        "diagnosed_date": "2013-05-25"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Sertraline 50mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-11",
+    "risk_score": 50
+  },
+  {
+    "patient_id": "TT-0141",
+    "first_name": "Marcus",
+    "last_name": "Maharaj",
+    "gender": "Male",
+    "age": 67,
+    "date_of_birth": "1958-12-10",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Diego Martin",
+    "insurance": "Public (CDAP)",
+    "bmi": 34.4,
+    "blood_pressure": "118/72",
+    "systolic": 118,
+    "diastolic": 72,
+    "hba1c": 7.3,
+    "fasting_glucose": 282.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Controlled",
+        "diagnosed_date": "2003-09-06"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 3",
+        "diagnosed_date": "2003-08-27"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Metformin 1000mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Calcium Carbonate 500mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "As needed",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2025-10-03",
+    "risk_score": 64
+  },
+  {
+    "patient_id": "TT-0142",
+    "first_name": "Jason",
+    "last_name": "Gonzales",
+    "gender": "Male",
+    "age": 37,
+    "date_of_birth": "1988-08-24",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Sangre Grande",
+    "insurance": "NHIS",
+    "bmi": 28.8,
+    "blood_pressure": "114/65",
+    "systolic": 114,
+    "diastolic": 65,
+    "hba1c": 6.0,
+    "fasting_glucose": 118.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "3-4x/week",
+    "conditions": [
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2010-04-28"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lifestyle Modification Only",
+        "for_condition": "Obesity",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Phentermine 37.5mg",
+        "for_condition": "Obesity",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2025-12-05",
+    "risk_score": 10
+  },
+  {
+    "patient_id": "TT-0143",
+    "first_name": "Esther",
+    "last_name": "Ali",
+    "gender": "Female",
+    "age": 42,
+    "date_of_birth": "1984-02-06",
+    "ethnicity": "Indo-Trinidadian",
+    "region": "Port of Spain",
+    "insurance": "Private Insurance",
+    "bmi": 20.0,
+    "blood_pressure": "132/85",
+    "systolic": 132,
+    "diastolic": 85,
+    "hba1c": 5.2,
+    "fasting_glucose": 117.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-11-15",
+    "risk_score": 1
+  },
+  {
+    "patient_id": "TT-0144",
+    "first_name": "Yusuf",
+    "last_name": "Sookdeo",
+    "gender": "Male",
+    "age": 70,
+    "date_of_birth": "1955-12-16",
+    "ethnicity": "Other",
+    "region": "Arima",
+    "insurance": "NHIS",
+    "bmi": 27.4,
+    "blood_pressure": "174/86",
+    "systolic": 174,
+    "diastolic": 86,
+    "hba1c": 5.8,
+    "fasting_glucose": 120.0,
+    "smoker": false,
+    "alcohol_use": "Moderate",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2011-07-25"
+      },
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Moderate",
+        "diagnosed_date": "1998-09-16"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 4-5",
+        "diagnosed_date": "1993-02-27"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Mild",
+        "diagnosed_date": "1989-01-05"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Hydrochlorothiazide 25mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Atorvastatin 20mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Calcium Carbonate 500mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Fluoxetine 20mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-22",
+    "risk_score": 100
+  },
+  {
+    "patient_id": "TT-0145",
+    "first_name": "Avinash",
+    "last_name": "Ali",
+    "gender": "Male",
+    "age": 59,
+    "date_of_birth": "1966-08-18",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Princes Town",
+    "insurance": "Private Insurance",
+    "bmi": 32.0,
+    "blood_pressure": "121/67",
+    "systolic": 121,
+    "diastolic": 67,
+    "hba1c": 5.5,
+    "fasting_glucose": 91.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [],
+    "medications": [],
+    "last_visit": "2025-11-10",
+    "risk_score": 24
+  },
+  {
+    "patient_id": "TT-0146",
+    "first_name": "Keron",
+    "last_name": "Joseph",
+    "gender": "Male",
+    "age": 37,
+    "date_of_birth": "1989-01-06",
+    "ethnicity": "Mixed",
+    "region": "Chaguanas",
+    "insurance": "Public (CDAP)",
+    "bmi": 31.4,
+    "blood_pressure": "170/93",
+    "systolic": 170,
+    "diastolic": 93,
+    "hba1c": 5.7,
+    "fasting_glucose": 101.0,
+    "smoker": true,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 1",
+        "diagnosed_date": "2022-01-31"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class I (BMI 30-34.9)",
+        "diagnosed_date": "2012-07-02"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Nifedipine 30mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Amlodipine 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "Twice daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Phentermine 37.5mg",
+        "for_condition": "Obesity",
+        "frequency": "Weekly",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-01-26",
+    "risk_score": 58
+  },
+  {
+    "patient_id": "TT-0147",
+    "first_name": "Stefan",
+    "last_name": "Williams",
+    "gender": "Male",
+    "age": 56,
+    "date_of_birth": "1969-10-17",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Port of Spain",
+    "insurance": "Private Insurance",
+    "bmi": 33.8,
+    "blood_pressure": "132/84",
+    "systolic": 132,
+    "diastolic": 84,
+    "hba1c": 11.6,
+    "fasting_glucose": 298.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Type 2 Diabetes",
+        "severity": "Uncontrolled",
+        "diagnosed_date": "1996-06-28"
+      },
+      {
+        "condition": "Obesity",
+        "severity": "Class II (BMI 35-39.9)",
+        "diagnosed_date": "2023-02-07"
+      },
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Mild Persistent",
+        "diagnosed_date": "2011-05-16"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Metformin 500mg",
+        "for_condition": "Type 2 Diabetes",
+        "frequency": "Twice daily",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Phentermine 37.5mg",
+        "for_condition": "Obesity",
+        "frequency": "Weekly",
+        "adherence": "Poor"
+      },
+      {
+        "medication": "Budesonide/Formoterol",
+        "for_condition": "Asthma / COPD",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      }
+    ],
+    "last_visit": "2026-01-06",
+    "risk_score": 80
+  },
+  {
+    "patient_id": "TT-0148",
+    "first_name": "Xena",
+    "last_name": "Ramkissoon",
+    "gender": "Female",
+    "age": 81,
+    "date_of_birth": "1944-07-18",
+    "ethnicity": "Other",
+    "region": "Princes Town",
+    "insurance": "Private Insurance",
+    "bmi": 27.0,
+    "blood_pressure": "156/106",
+    "systolic": 156,
+    "diastolic": 106,
+    "hba1c": 5.4,
+    "fasting_glucose": 96.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "5+/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2025-01-23"
+      },
+      {
+        "condition": "Chronic Kidney Disease",
+        "severity": "Stage 1-2",
+        "diagnosed_date": "1995-03-09"
+      },
+      {
+        "condition": "Depression / Anxiety",
+        "severity": "Moderate",
+        "diagnosed_date": "1998-07-04"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Nifedipine 30mg",
+        "for_condition": "Hypertension",
+        "frequency": "Weekly",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Amlodipine 5mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Furosemide 40mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Calcium Carbonate 500mg",
+        "for_condition": "Chronic Kidney Disease",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Escitalopram 10mg",
+        "for_condition": "Depression / Anxiety",
+        "frequency": "Once daily",
+        "adherence": "Poor"
+      }
+    ],
+    "last_visit": "2026-03-11",
+    "risk_score": 78
+  },
+  {
+    "patient_id": "TT-0149",
+    "first_name": "Asha",
+    "last_name": "Maharaj",
+    "gender": "Female",
+    "age": 70,
+    "date_of_birth": "1956-03-10",
+    "ethnicity": "Afro-Trinidadian",
+    "region": "Point Fortin",
+    "insurance": "Public (CDAP)",
+    "bmi": 26.6,
+    "blood_pressure": "137/109",
+    "systolic": 137,
+    "diastolic": 109,
+    "hba1c": 4.9,
+    "fasting_glucose": 75.0,
+    "smoker": false,
+    "alcohol_use": "Social",
+    "exercise_frequency": "Sedentary",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Stage 2",
+        "diagnosed_date": "2011-04-05"
+      },
+      {
+        "condition": "Cardiovascular Disease",
+        "severity": "Severe",
+        "diagnosed_date": "2002-03-04"
+      },
+      {
+        "condition": "Sickle Cell Disease",
+        "severity": "Moderate",
+        "diagnosed_date": "2005-11-12"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Lisinopril 10mg",
+        "for_condition": "Hypertension",
+        "frequency": "As needed",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Atorvastatin 20mg",
+        "for_condition": "Cardiovascular Disease",
+        "frequency": "Twice daily",
+        "adherence": "Moderate"
+      },
+      {
+        "medication": "Hydroxyurea 500mg",
+        "for_condition": "Sickle Cell Disease",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2025-11-11",
+    "risk_score": 74
+  },
+  {
+    "patient_id": "TT-0150",
+    "first_name": "Yashoda",
+    "last_name": "Garcia",
+    "gender": "Female",
+    "age": 85,
+    "date_of_birth": "1940-11-04",
+    "ethnicity": "Mixed",
+    "region": "Chaguanas",
+    "insurance": "Public (CDAP)",
+    "bmi": 30.0,
+    "blood_pressure": "169/95",
+    "systolic": 169,
+    "diastolic": 95,
+    "hba1c": 6.0,
+    "fasting_glucose": 107.0,
+    "smoker": false,
+    "alcohol_use": "None",
+    "exercise_frequency": "1-2x/week",
+    "conditions": [
+      {
+        "condition": "Hypertension",
+        "severity": "Hypertensive Crisis",
+        "diagnosed_date": "2007-09-24"
+      },
+      {
+        "condition": "Asthma / COPD",
+        "severity": "Severe",
+        "diagnosed_date": "1984-04-02"
+      }
+    ],
+    "medications": [
+      {
+        "medication": "Nifedipine 30mg",
+        "for_condition": "Hypertension",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Salbutamol Inhaler",
+        "for_condition": "Asthma / COPD",
+        "frequency": "Once daily",
+        "adherence": "Good"
+      },
+      {
+        "medication": "Fluticasone Inhaler",
+        "for_condition": "Asthma / COPD",
+        "frequency": "As needed",
+        "adherence": "Good"
+      }
+    ],
+    "last_visit": "2026-01-10",
+    "risk_score": 76
+  }
+]
