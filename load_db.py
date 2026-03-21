@@ -4,10 +4,16 @@ Creates tables: patients, conditions, medications
 """
 
 import json
+import os
 import psycopg2
 from psycopg2.extras import execute_values
+from dotenv import load_dotenv
 
-DATABASE_URL = "postgresql://postgres:CKUsFFxHuncuINbfZVHyQojwKGefollG@centerbeam.proxy.rlwy.net:18737/railway"
+load_dotenv()
+
+DATABASE_URL = os.environ.get("DATABASE_URL")
+if not DATABASE_URL:
+    raise RuntimeError("DATABASE_URL environment variable is not set. Add it to .env or export it.")
 
 def main():
     with open("data/patients.json") as f:

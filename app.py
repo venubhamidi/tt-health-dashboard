@@ -7,6 +7,9 @@ import json
 import os
 from collections import Counter
 
+from dotenv import load_dotenv
+load_dotenv()
+
 import anthropic
 import pandas as pd
 import plotly.express as px
