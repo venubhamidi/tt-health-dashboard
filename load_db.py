@@ -31,14 +31,15 @@ def main():
 
         CREATE TABLE patients (
             patient_id VARCHAR(10) PRIMARY KEY,
+            country VARCHAR(3),
             first_name VARCHAR(50),
             last_name VARCHAR(50),
             gender VARCHAR(10),
             age INTEGER,
             date_of_birth DATE,
-            ethnicity VARCHAR(30),
+            ethnicity VARCHAR(40),
             region VARCHAR(50),
-            insurance VARCHAR(30),
+            insurance VARCHAR(60),
             bmi DECIMAL(4,1),
             systolic INTEGER,
             diastolic INTEGER,
@@ -57,6 +58,7 @@ def main():
         CREATE TABLE conditions (
             id SERIAL PRIMARY KEY,
             patient_id VARCHAR(10) REFERENCES patients(patient_id),
+            country VARCHAR(3),
             condition VARCHAR(50),
             severity VARCHAR(50),
             diagnosed_date DATE,
@@ -66,18 +68,23 @@ def main():
         CREATE TABLE medications (
             id SERIAL PRIMARY KEY,
             patient_id VARCHAR(10) REFERENCES patients(patient_id),
-            medication VARCHAR(50),
+            country VARCHAR(3),
+            medication VARCHAR(60),
             for_condition VARCHAR(50),
             frequency VARCHAR(20),
             adherence VARCHAR(10)
         );
+
+        CREATE INDEX idx_patients_country ON patients(country);
+        CREATE INDEX idx_conditions_country ON conditions(country);
+        CREATE INDEX idx_medications_country ON medications(country);
     """)
 
     # Insert patients
     patient_rows = []
     for p in patients:
         patient_rows.append((
-            p["patient_id"], p["first_name"], p["last_name"], p["gender"],
+            p["patient_id"], p["country"], p["first_name"], p["last_name"], p["gender"],
             p["age"], p["date_of_birth"], p["ethnicity"], p["region"],
             p["insurance"], p["bmi"], p["systolic"], p["diastolic"],
             p["blood_pressure"], p["hba1c"], p["fasting_glucose"],
@@ -88,7 +95,7 @@ def main():
 
     execute_values(cur, """
         INSERT INTO patients (
-            patient_id, first_name, last_name, gender, age, date_of_birth,
+            patient_id, country, first_name, last_name, gender, age, date_of_birth,
             ethnicity, region, insurance, bmi, systolic, diastolic,
             blood_pressure, hba1c, fasting_glucose, smoker, alcohol_use,
             exercise_frequency, last_visit, risk_score, num_conditions, num_medications
@@ -101,13 +108,13 @@ def main():
     for p in patients:
         for c in p["conditions"]:
             cond_rows.append((
-                p["patient_id"], c["condition"], c["severity"],
+                p["patient_id"], p["country"], c["condition"], c["severity"],
                 c["diagnosed_date"], c.get("subtype"),
             ))
 
     if cond_rows:
         execute_values(cur, """
-            INSERT INTO conditions (patient_id, condition, severity, diagnosed_date, subtype)
+            INSERT INTO conditions (patient_id, country, condition, severity, diagnosed_date, subtype)
             VALUES %s
         """, cond_rows)
     print(f"Inserted {len(cond_rows)} condition records")
@@ -117,13 +124,13 @@ def main():
     for p in patients:
         for m in p["medications"]:
             med_rows.append((
-                p["patient_id"], m["medication"], m["for_condition"],
+                p["patient_id"], p["country"], m["medication"], m["for_condition"],
                 m["frequency"], m["adherence"],
             ))
 
     if med_rows:
         execute_values(cur, """
-            INSERT INTO medications (patient_id, medication, for_condition, frequency, adherence)
+            INSERT INTO medications (patient_id, country, medication, for_condition, frequency, adherence)
             VALUES %s
         """, med_rows)
     print(f"Inserted {len(med_rows)} medication records")

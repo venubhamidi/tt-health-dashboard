@@ -1,27 +1,33 @@
 """
-Trinidad & Tobago Population Health Dashboard
-Focused on Medication Distribution Analytics with AI Assistant
+Multi-Country Population Health Dashboard
+Focused on Medication Distribution Analytics with a multilingual, tool-using
+LangGraph AI agent. Country is selected in the sidebar and drives every query;
+display language defaults to each country's primary official language.
 """
 
 import json
 import os
-from collections import Counter
 
 from dotenv import load_dotenv
 load_dotenv()
 
-import anthropic
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import psycopg2
 import streamlit as st
 
+from countries import REGISTRY, COUNTRY_NAMES
+from translations import (
+    t, tv, LANGUAGES, AI_LANGUAGE_NAME,
+    agent_suggestions, tool_desc,
+)
+
 # ---------------------------------------------------------------------------
 # Page config
 # ---------------------------------------------------------------------------
 st.set_page_config(
-    page_title="T&T Health Analytics",
+    page_title="Population Health Analytics",
     page_icon="++",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -32,14 +38,14 @@ st.set_page_config(
 # ---------------------------------------------------------------------------
 
 @st.cache_data(ttl=300)
-def load_data():
+def load_data(country_code):
     db_url = os.environ.get("DATABASE_URL", "")
 
     if db_url:
         conn = psycopg2.connect(db_url)
-        df_patients = pd.read_sql("SELECT * FROM patients", conn)
-        df_meds_raw = pd.read_sql("SELECT * FROM medications", conn)
-        df_conds_raw = pd.read_sql("SELECT * FROM conditions", conn)
+        df_patients = pd.read_sql("SELECT * FROM patients WHERE country = %s", conn, params=(country_code,))
+        df_meds_raw = pd.read_sql("SELECT * FROM medications WHERE country = %s", conn, params=(country_code,))
+        df_conds_raw = pd.read_sql("SELECT * FROM conditions WHERE country = %s", conn, params=(country_code,))
         conn.close()
 
         # Build condition_list for patient rows
@@ -74,6 +80,7 @@ def load_data():
     # Fallback to JSON file
     with open("data/patients.json") as f:
         patients = json.load(f)
+    patients = [p for p in patients if p.get("country") == country_code]
 
     rows = []
     for p in patients:
@@ -115,7 +122,42 @@ def load_data():
     return patients, df_patients, df_meds, df_conditions
 
 
-patients_raw, df_patients, df_meds, df_conditions = load_data()
+# ---------------------------------------------------------------------------
+# Country + language selection (drives every query and all display strings)
+# ---------------------------------------------------------------------------
+def _flag(code):
+    """Regional-indicator flag emoji from a 2-letter ISO country code."""
+    return "".join(chr(0x1F1E6 + ord(ch) - ord("A")) for ch in code[:2])
+
+def _country_label(code):
+    c = REGISTRY[code]
+    label = f"{_flag(code)}  {c['name']}"
+    if c["name_local"] != c["name"]:
+        label += f" ({c['name_local']})"
+    return label
+
+country_code = st.sidebar.selectbox(
+    "Country / País / Pays",
+    options=list(REGISTRY.keys()),
+    format_func=_country_label,
+    key="country_select",
+)
+cfg = REGISTRY[country_code]
+
+# Language options = the country's own language(s) + English (always available
+# for English-speaking demo/super users). Defaults to the primary language.
+# A country config may declare an explicit "languages" list; otherwise it is
+# derived as [primary language, English].
+allowed_langs = list(dict.fromkeys(cfg.get("languages", [cfg["language"]]) + ["en"]))
+lang = st.sidebar.selectbox(
+    t(cfg["language"], "language"),
+    options=allowed_langs,
+    index=0,  # primary language of the country
+    format_func=lambda c: LANGUAGES[c],
+    key=f"lang_select_{country_code}",
+)
+
+patients_raw, df_patients, df_meds, df_conditions = load_data(country_code)
 
 # Age group helper
 def age_group(age):
@@ -158,9 +200,16 @@ st.markdown("""
         border-radius: 8px 8px 0 0;
         padding: 8px 20px;
     }
+    /* Force readable dark text on the light (unselected) tabs, incl. in dark mode */
+    .stTabs [data-baseweb="tab"] p {
+        color: #262730 !important;
+        font-weight: 600;
+    }
     .stTabs [aria-selected="true"] {
         background-color: #667eea;
-        color: white;
+    }
+    .stTabs [aria-selected="true"] p {
+        color: #ffffff !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -168,22 +217,23 @@ st.markdown("""
 # ---------------------------------------------------------------------------
 # Sidebar
 # ---------------------------------------------------------------------------
-st.sidebar.title("Filters")
+st.sidebar.title(t(lang, "filters"))
 
 selected_regions = st.sidebar.multiselect(
-    "Region", options=sorted(df_patients["region"].unique()), default=[]
+    t(lang, "f_region"), options=sorted(df_patients["region"].unique()), default=[]
 )
 selected_age_groups = st.sidebar.multiselect(
-    "Age Group", options=AGE_ORDER, default=[]
+    t(lang, "f_age"), options=AGE_ORDER, default=[]
 )
 selected_genders = st.sidebar.multiselect(
-    "Gender", options=["Male", "Female"], default=[]
+    t(lang, "f_gender"), options=["Male", "Female"],
+    default=[], format_func=lambda g: tv(lang, g),
 )
 selected_ethnicities = st.sidebar.multiselect(
-    "Ethnicity", options=sorted(df_patients["ethnicity"].unique()), default=[]
+    t(lang, "f_ethnicity"), options=sorted(df_patients["ethnicity"].unique()), default=[]
 )
 selected_insurance = st.sidebar.multiselect(
-    "Insurance", options=sorted(df_patients["insurance"].unique()), default=[]
+    t(lang, "f_insurance"), options=sorted(df_patients["insurance"].unique()), default=[]
 )
 
 # Apply filters
@@ -227,33 +277,33 @@ fc = df_conditions[mask_c] if not df_conditions.empty else df_conditions
 # ---------------------------------------------------------------------------
 # Header
 # ---------------------------------------------------------------------------
-st.title("Trinidad & Tobago Population Health Dashboard")
-st.caption("Medication Distribution Analytics | 150 Patient Database")
+st.title(f"{cfg['name_local']} — {t(lang, 'subtitle')}")
+st.caption(f"{t(lang, 'subtitle')} | {len(fp)} {t(lang, 'patient_db')}")
 
 # ---------------------------------------------------------------------------
 # KPI row
 # ---------------------------------------------------------------------------
 k1, k2, k3, k4, k5 = st.columns(5)
-k1.metric("Total Patients", len(fp))
-k2.metric("Active Conditions", int(fp["num_conditions"].sum()))
-k3.metric("Medications Prescribed", len(fm))
-k4.metric("Avg Risk Score", f"{fp['risk_score'].mean():.0f}/100" if len(fp) else "N/A")
-k5.metric("High Risk Patients", int((fp["risk_score"] > 60).sum()))
+k1.metric(t(lang, "kpi_total"), len(fp))
+k2.metric(t(lang, "kpi_conditions"), int(fp["num_conditions"].sum()))
+k3.metric(t(lang, "kpi_meds"), len(fm))
+k4.metric(t(lang, "kpi_avg_risk"), f"{fp['risk_score'].mean():.0f}/100" if len(fp) else "N/A")
+k5.metric(t(lang, "kpi_high_risk"), int((fp["risk_score"] > 60).sum()))
 
 # ---------------------------------------------------------------------------
 # Tabs
 # ---------------------------------------------------------------------------
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "Medication Distribution",
-    "Condition Overview",
-    "Demographics & Lifestyle",
-    "Patient Explorer",
-    "AI Health Assistant",
+    t(lang, "tab_medication"),
+    t(lang, "tab_condition"),
+    t(lang, "tab_demographics"),
+    t(lang, "tab_explorer"),
+    t(lang, "tab_agent"),
 ])
 
 # ========================== TAB 1: MEDICATION DISTRIBUTION ==================
 with tab1:
-    st.subheader("Medication Distribution Analysis")
+    st.subheader(t(lang, "sec_med_analysis"))
 
     if fm.empty:
         st.info("No medication data for the current filter selection.")
@@ -276,7 +326,7 @@ with tab1:
         with col2:
             cond_med = fm.groupby("for_condition")["medication"].count().sort_values(ascending=False)
             fig2 = px.pie(
-                names=cond_med.index, values=cond_med.values,
+                names=[tv(lang, c) for c in cond_med.index], values=cond_med.values,
                 title="Prescriptions by Condition Category (click a slice to drill down)",
                 color_discrete_sequence=px.colors.qualitative.Set2,
             )
@@ -432,7 +482,7 @@ with tab1:
 
 # ========================== TAB 2: CONDITION OVERVIEW =======================
 with tab2:
-    st.subheader("Condition Prevalence & Analysis")
+    st.subheader(t(lang, "sec_condition"))
 
     if fc.empty:
         st.info("No condition data for the current filter selection.")
@@ -442,7 +492,7 @@ with tab2:
         with cc1:
             cond_counts = fc["condition"].value_counts()
             fig_cond = px.bar(
-                x=cond_counts.values, y=cond_counts.index,
+                x=cond_counts.values, y=[tv(lang, c) for c in cond_counts.index],
                 orientation="h",
                 title="Condition Prevalence (click a bar to drill down)",
                 labels={"x": "Patient Count", "y": "Condition"},
@@ -515,7 +565,7 @@ with tab2:
 
 # ========================== TAB 3: DEMOGRAPHICS ============================
 with tab3:
-    st.subheader("Demographics & Lifestyle Factors")
+    st.subheader(t(lang, "sec_demographics"))
 
     dm1, dm2, dm3 = st.columns(3)
 
@@ -589,7 +639,7 @@ with tab3:
 
 # ========================== TAB 4: PATIENT EXPLORER ========================
 with tab4:
-    st.subheader("Patient Explorer")
+    st.subheader(t(lang, "sec_explorer"))
 
     risk_filter = st.select_slider(
         "Risk Score Range",
@@ -664,168 +714,72 @@ with tab4:
             st.dataframe(med_df, use_container_width=True)
 
 
-# ========================== TAB 5: AI ASSISTANT =============================
+# ========================== TAB 5: AI AGENT (LANGGRAPH) ====================
 with tab5:
-    st.subheader("AI Health Assistant")
-    st.caption("Ask questions about medication distribution, patient demographics, and population health trends.")
+    st.subheader(t(lang, "tab_agent"))
+    st.caption(t(lang, "agent_caption"))
 
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-
     if not api_key:
-        st.error("ANTHROPIC_API_KEY environment variable is not set. Please set it and restart the app.")
+        st.error(t(lang, "ai_no_key"))
     else:
-        # Build data summary for context
-        @st.cache_data
-        def build_data_summary():
-            summary_parts = []
-            summary_parts.append(f"DATABASE OVERVIEW: {len(df_patients)} patients from Trinidad & Tobago\n")
+        try:
+            from ai_agent import build_agent, AGENT_TOOL_NAMES
+        except ImportError:
+            st.warning(t(lang, "agent_not_installed"))
+        else:
+            # Show the tools the agent can call (its live-data capabilities).
+            with st.expander(f"🧰 {t(lang, 'agent_tools_header')}"):
+                for name in AGENT_TOOL_NAMES:
+                    st.markdown(f"- **`{name}`** — {tool_desc(lang, name)}")
 
-            # Condition prevalence
-            summary_parts.append("CONDITION PREVALENCE:")
-            if not df_conditions.empty:
-                for cond, count in df_conditions["condition"].value_counts().items():
-                    pct = count / len(df_patients) * 100
-                    summary_parts.append(f"  - {cond}: {count} patients ({pct:.1f}%)")
+            # Separate chat history from the simple assistant. Stored as plain
+            # (role, text) turns; tool traffic is not replayed across turns.
+            if "agent_messages" not in st.session_state:
+                st.session_state.agent_messages = []
 
-            # Top medications
-            summary_parts.append("\nTOP MEDICATIONS PRESCRIBED:")
-            if not df_meds.empty:
-                for med, count in df_meds["medication"].value_counts().head(20).items():
-                    conds = df_meds[df_meds["medication"] == med]["for_condition"].unique()
-                    summary_parts.append(f"  - {med}: {count} prescriptions (for: {', '.join(conds)})")
+            # Clickable example questions (localized). A click sets the prompt.
+            example_clicked = None
+            st.markdown(f"**{t(lang, 'agent_examples')}**")
+            for i, ex in enumerate(agent_suggestions(lang)):
+                if st.button(ex, key=f"agent_ex_{i}", use_container_width=True):
+                    example_clicked = ex
 
-            # Medication adherence
-            summary_parts.append("\nMEDICATION ADHERENCE:")
-            if not df_meds.empty:
-                for adh, count in df_meds["adherence"].value_counts().items():
-                    summary_parts.append(f"  - {adh}: {count} ({count/len(df_meds)*100:.1f}%)")
+            for msg in st.session_state.agent_messages:
+                with st.chat_message(msg["role"]):
+                    st.markdown(msg["content"])
 
-            # Age group breakdown
-            summary_parts.append("\nAGE GROUP DISTRIBUTION:")
-            for ag in AGE_ORDER:
-                count = (df_patients["age_group"] == ag).sum()
-                summary_parts.append(f"  - {ag}: {count} patients")
+            typed = st.chat_input(t(lang, "ai_placeholder"), key="agent_input")
+            if prompt := (example_clicked or typed):
+                st.session_state.agent_messages.append({"role": "user", "content": prompt})
+                with st.chat_message("user"):
+                    st.markdown(prompt)
 
-            # Meds by age group
-            summary_parts.append("\nMEDICATION PRESCRIPTIONS BY AGE GROUP:")
-            if not df_meds.empty:
-                for ag in AGE_ORDER:
-                    ag_meds = df_meds[df_meds["age_group"] == ag]
-                    if not ag_meds.empty:
-                        top3 = ag_meds["medication"].value_counts().head(3)
-                        meds_str = ", ".join(f"{m} ({c})" for m, c in top3.items())
-                        summary_parts.append(f"  - {ag}: {len(ag_meds)} total - top: {meds_str}")
+                with st.chat_message("assistant"):
+                    with st.spinner(t(lang, "ai_analyzing")):
+                        agent = build_agent(
+                            df_patients, df_meds, df_conditions,
+                            cfg["name"], AI_LANGUAGE_NAME.get(lang, "English"), api_key,
+                        )
+                        history = [(m["role"], m["content"]) for m in st.session_state.agent_messages]
+                        result = agent.invoke({"messages": history})
+                        out_messages = result["messages"]
 
-            # Demographics
-            summary_parts.append("\nETHNICITY:")
-            for eth, count in df_patients["ethnicity"].value_counts().items():
-                summary_parts.append(f"  - {eth}: {count} ({count/len(df_patients)*100:.1f}%)")
+                        # Collect the tool calls the agent made, for a demo trace.
+                        tool_calls = []
+                        for m in out_messages:
+                            for tc in getattr(m, "tool_calls", None) or []:
+                                tool_calls.append(f"{tc['name']}({', '.join(f'{k}={v}' for k, v in (tc.get('args') or {}).items())})")
 
-            summary_parts.append(f"\nGENDER: Male {(df_patients['gender']=='Male').sum()}, Female {(df_patients['gender']=='Female').sum()}")
+                        # Final answer = content of the last message.
+                        final = out_messages[-1].content
+                        if isinstance(final, list):
+                            final = "".join(b.get("text", "") for b in final if isinstance(b, dict))
 
-            # Insurance
-            summary_parts.append("\nINSURANCE COVERAGE:")
-            for ins, count in df_patients["insurance"].value_counts().items():
-                summary_parts.append(f"  - {ins}: {count}")
+                        if tool_calls:
+                            with st.expander(f"🔧 {t(lang, 'agent_steps')}"):
+                                for i, call in enumerate(tool_calls, 1):
+                                    st.markdown(f"{i}. `{call}`")
 
-            # Risk scores
-            summary_parts.append(f"\nRISK SCORES: Avg={df_patients['risk_score'].mean():.1f}, "
-                                 f"High(>60)={(df_patients['risk_score']>60).sum()}, "
-                                 f"Medium(30-60)={((df_patients['risk_score']>=30)&(df_patients['risk_score']<=60)).sum()}, "
-                                 f"Low(<30)={(df_patients['risk_score']<30).sum()}")
-
-            # Regions
-            summary_parts.append("\nPATIENTS BY REGION:")
-            for reg, count in df_patients["region"].value_counts().items():
-                summary_parts.append(f"  - {reg}: {count}")
-
-            # Adherence by condition
-            summary_parts.append("\nADHERENCE BY CONDITION:")
-            if not df_meds.empty:
-                for cond in df_meds["for_condition"].unique():
-                    cond_meds = df_meds[df_meds["for_condition"] == cond]
-                    poor_pct = (cond_meds["adherence"] == "Poor").sum() / len(cond_meds) * 100
-                    good_pct = (cond_meds["adherence"] == "Good").sum() / len(cond_meds) * 100
-                    summary_parts.append(f"  - {cond}: Good={good_pct:.0f}%, Poor={poor_pct:.0f}%")
-
-            # Lifestyle
-            summary_parts.append(f"\nLIFESTYLE: Smokers={(df_patients['smoker']==True).sum()}, "
-                                 f"Heavy Alcohol={(df_patients['alcohol_use']=='Heavy').sum()}, "
-                                 f"Sedentary={(df_patients['exercise_frequency']=='Sedentary').sum()}")
-
-            # Comorbidity pairs
-            summary_parts.append("\nCOMMON COMORBIDITY PAIRS:")
-            comorbid_counts = Counter()
-            for p in patients_raw:
-                conds = sorted([c["condition"] for c in p["conditions"]])
-                for i in range(len(conds)):
-                    for j in range(i + 1, len(conds)):
-                        comorbid_counts[(conds[i], conds[j])] += 1
-            for (c1, c2), count in comorbid_counts.most_common(10):
-                summary_parts.append(f"  - {c1} + {c2}: {count} patients")
-
-            return "\n".join(summary_parts)
-
-        data_summary = build_data_summary()
-
-        # Suggested questions
-        st.markdown("**Suggested questions:**")
-        suggestions = [
-            "What are the most commonly prescribed medications and for which conditions?",
-            "How does medication usage differ across age groups?",
-            "What is the medication adherence rate and which conditions have the worst adherence?",
-            "Which regions have the highest prescription volumes?",
-            "What are the top comorbidity pairs and how do they affect medication loads?",
-            "Compare medication patterns between male and female patients",
-            "Which insurance types are associated with the most prescriptions?",
-            "What interventions would you recommend for the high-risk patient group?",
-        ]
-        for s in suggestions:
-            st.markdown(f"- _{s}_")
-
-        # Chat
-        if "messages" not in st.session_state:
-            st.session_state.messages = []
-
-        for msg in st.session_state.messages:
-            with st.chat_message(msg["role"]):
-                st.markdown(msg["content"])
-
-        if prompt := st.chat_input("Ask about medication distribution, demographics, trends..."):
-            st.session_state.messages.append({"role": "user", "content": prompt})
-            with st.chat_message("user"):
-                st.markdown(prompt)
-
-            with st.chat_message("assistant"):
-                with st.spinner("Analyzing population data..."):
-                    client = anthropic.Anthropic(api_key=api_key)
-
-                    system_prompt = f"""You are a population health analytics assistant for Trinidad & Tobago.
-You specialize in medication distribution analysis, epidemiological trends, and public health insights.
-
-You have access to a database of {len(df_patients)} patients. Here is the complete data summary:
-
-{data_summary}
-
-INSTRUCTIONS:
-- Focus on medication distribution, prescription patterns, age group analysis, and adherence.
-- Provide data-driven answers with specific numbers and percentages from the data.
-- When relevant, mention Trinidad & Tobago-specific health context (CDAP program, regional health authorities, NCD burden).
-- Suggest actionable public health interventions when appropriate.
-- Format responses with clear headers and bullet points for readability.
-- If asked about something not in the data, say so clearly.
-"""
-
-                    chat_messages = [{"role": m["role"], "content": m["content"]}
-                                     for m in st.session_state.messages]
-
-                    response = client.messages.create(
-                        model="claude-sonnet-4-20250514",
-                        max_tokens=1500,
-                        system=system_prompt,
-                        messages=chat_messages,
-                    )
-
-                    reply = response.content[0].text
-                    st.markdown(reply)
-                    st.session_state.messages.append({"role": "assistant", "content": reply})
+                        st.markdown(final)
+                        st.session_state.agent_messages.append({"role": "assistant", "content": final})
